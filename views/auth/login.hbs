@@ -1,25 +1,35 @@
+<nav class="navbar">
+  <div class="navbar-wrapper">
+    <a href="/" class="brand-logo"><img id="logo" src="">MEALPREP</a>
+  </div>
+</nav>
+<div class="section-wrapper">
+  <section class="section">
+    <h2 class="login-heading">Login</h2>
+    <form class="form" action="/auth/login" method="POST" id="form-container">
+      <label for="username">Username</label><br>
+      <input id="username" type="text" name="username" placeholder="Your username goes here">
 
-<h2>Login</h2>
+      <br><br>
 
-<form action="/auth/login" method="POST" id="form-container">
-  <label for="username">Username</label>
-  <input id="username" type="text" name="username" placeholder="JonSnow">
+      <label for="password">Password</label><br>
+      <input id="password" type="password" name="password" placeholder="Your best password here">
+      <br>
+      {{#if message }}
+      <div class="error-message">{{ message }}</div>
+      {{/if}}
 
-  <br><br>
+      <br><br>
 
-  <label for="password">Password</label>
-  <input id="password" type="password" name="password" placeholder="Your password">
-  <br>
-  {{#if message }}
-    <div class="error-message">{{ message }}</div>
-  {{/if}}
+      <button class="login-btn">Login</button>
 
-  <br><br>
+      <p class="account-message">
+        Don't have an account yet?
+        <a href="/auth/signup">Signup</a>
+      </p>
+    </form>
+  </section>
+</div>
 
-  <button>Login</button>
-
-  <p class="account-message">
-    Don't have an account yet?
-    <a href="/auth/signup">Signup</a>
-  </p>
-</form>
+<link rel="stylesheet" href="/stylesheets/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
