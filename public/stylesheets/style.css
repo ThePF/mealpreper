@@ -1,272 +1,280 @@
 @charset "UTF-8";
 * {
-    padding: 0;
-    margin: 0;
-}
+  padding: 0;
+  margin: 0; }
 
 /* Body section */
 body {
-    font-family: "Varela Round", sans-serif;
-    height: 720px;
-}
+  font-family: "Varela Round", sans-serif;
+  height: 720px;
+  overflow: hidden; }
 
 .login-body {
-    font-size: 14px;
-    background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
-    background-size: cover;
-    width: inherit;
-    height: inherit;
-}
+  font-size: 14px;
+  background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
+  background-size: cover;
+  width: inherit;
+  height: inherit; }
 
 .signup-body {
-    font-size: 14px;
-    background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
-    background-size: cover;
-    width: inherit;
-    height: inherit;
-}
+  font-size: 14px;
+  background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
+  background-size: cover;
+  width: inherit;
+  height: inherit; }
 
 /* Navbar for logged in users only (in Layout) */
 .navbar {
-    width: 100vw;
-    height: 50px;
-    background-color: darkslategrey;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+  width: 100vw;
+  height: 50px;
+  background-color: darkslategrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 .navbar ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: right;
-}
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right; }
 
 .navbar li {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 40px;
-    text-decoration: none;
-    font-size: 1.2em;
-}
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  text-decoration: none;
+  font-size: 1.2em; }
 
 .navbar li :nth-last-child(1) {
-    margin-right: 1220px;
-}
+  margin-right: 1220px; }
 
-.navbar #brand-logo {
+/* .navbar #brand-logo {
     display: flex;
     text-decoration: none;
     justify-content: left;
     color: #fff;
-    align-content: center;
     font-size: 20px;
     font-weight: 900;
     text-shadow: 3px 3px #3b3b3b;
 }
-
+ */
 /* Navbar for signup and login (in Layout) */
-/* .navbar-logsign {
-} */
 a {
-    color: #fff;
-}
+  color: #fff; }
 
 a:hover {
-    color: #d8d8d8;
-}
+  color: #d8d8d8; }
 
 .brand-logo {
-    display: flex;
-    text-decoration: none;
-    justify-content: left;
-    margin-left: 40px;
-    color: #fff;
-    align-content: center;
-    font-size: 40px;
-    font-weight: 900;
-    text-shadow: 3px 3px #3b3b3b;
-}
-
-/* nav {
-    background-color: #000;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    height: 50px;
-    color: white;
-    padding-top: 30px;
-} */
-.navbar-logsign a {
-    color: #f7f9f9;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    justify-content: right;
-}
+  display: flex;
+  text-decoration: none;
+  justify-content: left;
+  margin-left: 40px;
+  color: #fff;
+  align-content: center;
+  font-size: 40px;
+  font-weight: 900;
+  text-shadow: 3px 3px #3b3b3b; }
 
 /*Welcome page*/
 .welcome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("/images/lily-banse-365344-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 660px;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0.5; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/lily-banse-365344-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 720px;
+  overflow: hidden; }
 
-.welcomeInnerDiv {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+.welcome-div {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
 
-.welcomeText {
-    color: white;
-    margin-bottom: 200px;
-    font-size: 4em;
-    width: 1300px;
-    text-align: center;
-}
+.welcome-h2 {
+  color: white;
+  font-size: 4em;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 1200px; }
 
-.welcomeBtn {
-    width: 180px;
-    height: 90px;
-    font-size: 2em;
-    background-color: lightgray;
-}
+.username {
+  color: #0ad800; }
 
-.welcomeBtnLink {
-    text-decoration-style: none;
-    color: black;
-    border-bottom: none;
-    padding: 0;
-    margin: 0;
-}
+.welcome-h3 {
+  color: white;
+  margin-bottom: 90px;
+  font-size: 3em;
+  width: 1200px;
+  text-align: center; }
+
+.welcome-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #0ad800;
+  color: #ffffff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-bottom: 15px; }
+
+.welcome-btn:hover,
+.welcome-btn:focus {
+  background: #08a700; }
+
+.welcome-btn:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px; }
+
+.welcome-btn:active {
+  transform: scale(0.99); }
 
 .section-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem; }
 
 .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(43, 43, 43, 0.534);
-    width: 50%;
-    margin-top: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    border-radius: 20px;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(43, 43, 43, 0.534);
+  width: 50%;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  border-radius: 20px; }
 
 .signup-heading {
-    color: #fff;
-    border-bottom: solid #eb8100;
-    font-size: 40px;
-    padding-bottom: 3px;
-    margin-bottom: 40px;
-}
+  color: #fff;
+  border-bottom: solid #eb8100;
+  font-size: 40px;
+  padding-bottom: 3px;
+  margin-bottom: 40px; }
 
 .login-heading {
-    color: #fff;
-    border-bottom: solid #0069ed;
-    font-size: 40px;
-    padding-bottom: 3px;
-    margin-bottom: 40px;
-}
+  color: #fff;
+  border-bottom: solid #0069ed;
+  font-size: 40px;
+  padding-bottom: 3px;
+  margin-bottom: 40px; }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    font-size: 15px;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-size: 15px; }
 
 .form #username,
 #password {
-    height: 30px;
-    border-radius: 5px;
-}
+  height: 30px;
+  border-radius: 5px; }
 
 .form .login-btn {
-    border: none;
-    border-radius: 5px;
-    padding: 1rem 2rem;
-    margin: 0;
-    text-decoration: none;
-    background: #0069ed;
-    color: #ffffff;
-    font-family: "Varela Round", sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    margin-bottom: 15px;
-}
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-bottom: 15px; }
 
 .login-btn:hover,
 .login-btn:focus {
-    background: #0053ba;
-}
+  background: #0053ba; }
 
 .login-btn:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
-}
+  outline: 1px solid #fff;
+  outline-offset: -4px; }
 
 .login-btn:active {
-    transform: scale(0.99);
-}
+  transform: scale(0.99); }
 
 .form .signup-btn {
-    border: none;
-    border-radius: 5px;
-    padding: 1rem 2rem;
-    margin: 0;
-    text-decoration: none;
-    background: #ff8c00;
-    color: #ffffff;
-    font-family: "Varela Round", sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #ff8c00;
+  color: #ffffff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-bottom: 15px; }
 
 .signup-btn:hover,
 .signup-btn:focus {
-    background: #eb8100;
-}
+  background: #eb8100; }
 
 .signup-btn:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
-}
+  outline: 1px solid #fff;
+  outline-offset: -4px; }
 
 .signup-btn:active {
-    transform: scale(0.99);
-}
+  transform: scale(0.99); }
 
 .fb-login-button {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
+/*layout*/
+.navbar {
+  width: 100vw;
+  height: 50px;
+  background-color: darkslategrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.navbar li {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  text-decoration: none;
+  font-size: 1.2em; }
+
+.navbar li :nth-last-child(1) {
+  margin-right: 1220px; }
+
+.navbar a {
+  text-decoration: none;
+  color: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em; }
 
 /*create-plan*/
 .cp-divbackgroundofcp {

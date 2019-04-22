@@ -1,42 +1,30 @@
-const express = require('express');
-const router = express.Router();
+const express = require("express")
+const router = express.Router()
 
 /* GET home page */
 // router.get('/login', (req, res, next) => {
 //   res.render('auth/login');
 // });
 
-// router.use((req, res, next) => {
-//   if (req.isAuthenticated()) {
-//     next();
-//   } else {
-//     res.redirect('/login');
-//   }
-// });
+router.get("/welcome", (req, res, next) => {
+    console.log(req.user)
+    res.render("userarea/welcome", { username: req.user.username })
+})
 
-const authenticationCheck = (req, res, next) => {
-  if (req.isAuthenticated()) next();
-  else res.redirect('/auth/login');
-};
+router.get("/create-plan", (req, res, next) => {
+    res.render("userarea/create-plan")
+})
 
-router.get('/welcome', authenticationCheck, (req, res, next) => {
-  res.render('userarea/welcome');
-});
+router.get("/insert-meals", (req, res, next) => {
+    res.render("userarea/insert-meals")
+})
 
-router.get('/create-plan', authenticationCheck, (req, res, next) => {
-  res.render('userarea/create-plan');
-});
+router.get("/add-meals", (req, res, next) => {
+    res.render("userarea/add-meals")
+})
 
-router.get('/insert-meals', (req, res, next) => {
-  res.render('userarea/insert-meals');
-});
+router.get("/shoppinglist", (req, res, next) => {
+    res.render("userarea/shoppinglist")
+})
 
-router.get('/add-meals', (req, res, next) => {
-  res.render('userarea/add-meals');
-});
-
-router.get('/shoppinglist', (req, res, next) => {
-  res.render('userarea/shoppinglist');
-});
-
-module.exports = router;
+module.exports = router
