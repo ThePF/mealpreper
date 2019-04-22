@@ -9,7 +9,7 @@ const bcrypt = require('bcrypt');
 const bcryptSalt = 10;
 
 router.get('/login', (req, res, next) => {
-  res.render('auth/login', { message: req.flash('error') });
+  res.render('auth/login', { message: req.flash('error'), layout: false });
 });
 
 router.post(
@@ -23,7 +23,7 @@ router.post(
 );
 
 router.get('/signup', (req, res, next) => {
-  res.render('auth/signup');
+  res.render('auth/signup', { layout: false });
 });
 
 router.post('/signup', (req, res, next) => {
