@@ -5,10 +5,9 @@
             "type": "node",
             "request": "attach",
             "name": "DEBUG Irongenerate",
-            "program": "feffs",
             "port": 3000,
             "protocol": "inspector",
-            "restart": "true"
+            "restart": true
         }
     ]
 }
