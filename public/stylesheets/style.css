@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0; }
@@ -219,6 +220,139 @@ a:hover {
   border-bottom: none;
   padding: 0;
   margin: 0; }
+
+/*create-plan*/
+.cp-divbackgroundofcp {
+  display: flex;
+  justify-content: flex-start; }
+
+/* Customize */
+.cp-customizeTable {
+  width: 300px;
+  height: 600px;
+  background-color: lightgray; }
+
+.cp-customizebackgroundcolor {
+  width: inherit;
+  height: 80px;
+  display: flex;
+  flex-direction: column; }
+
+#cp-backgroundcolors {
+  width: inherit;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px; }
+
+#cp-bgcolor1 {
+  width: 15px;
+  height: 15px;
+  background-color: lightblue; }
+
+#cp-bgcolor2 {
+  width: 15px;
+  height: 15px;
+  background-color: lightcyan; }
+
+#cp-bgcolor3 {
+  width: 15px;
+  height: 15px;
+  background-color: lightseagreen; }
+
+#cp-bgcolor4 {
+  width: 15px;
+  height: 15px;
+  background-color: darkgoldenrod; }
+
+#cp-bgcolor5 {
+  width: 15px;
+  height: 15px;
+  background-color: darkmagenta; }
+
+#cp-bgcolor6 {
+  width: 15px;
+  height: 15px;
+  background-color: darkolivegreen; }
+
+.cp-customizeweekdaycolor {
+  width: inherit;
+  height: 80px;
+  display: flex;
+  flex-direction: column; }
+
+#cp-weekdaycolor {
+  width: inherit;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px; }
+
+#cp-wdcolor1 {
+  width: 15px;
+  height: 15px;
+  background-color: lightblue; }
+
+#cp-wdcolor2 {
+  width: 15px;
+  height: 15px;
+  background-color: lightcyan; }
+
+#cp-wdcolor3 {
+  width: 15px;
+  height: 15px;
+  background-color: lightseagreen; }
+
+#cp-wdcolor4 {
+  width: 15px;
+  height: 15px;
+  background-color: darkgoldenrod; }
+
+#cp-wdcolor5 {
+  width: 15px;
+  height: 15px;
+  background-color: darkmagenta; }
+
+#cp-wdcolor6 {
+  width: 15px;
+  height: 15px;
+  background-color: darkolivegreen; }
+
+.cp-divbackgroundofplan {
+  width: 1200px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#cp-backgroundofplan {
+  width: 950px;
+  height: 550px;
+  background-color: lightcoral; }
+
+table {
+  border: 1px solid black;
+  width: inherit;
+  height: inherit; }
+
+th {
+  border: 2px solid black; }
+
+td {
+  border-bottom: 1px solid black; }
+
+#cp-plan  {
+  border: 1px solid black; }
+
+.cp-weekday {
+  background-color: blue; }
+
+.cp-weekdays {
+  width: 50px;
+  height: 50px;
+  border-collapse: 1px solid black; }
 
 /*# sourceMappingURL=style.css.map */
 

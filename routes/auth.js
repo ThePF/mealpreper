@@ -8,6 +8,14 @@ const User = require('../models/User');
 const bcrypt = require('bcrypt');
 const bcryptSalt = 10;
 
+/* router.use((req, res, next) => {
+  if (req.user) {
+    next();
+  } else {
+    res.redirect('/auth/login');
+  }
+}); */
+
 router.get('/login', (req, res, next) => {
   res.render('auth/login', { message: req.flash('error'), layout: false });
 });
