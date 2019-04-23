@@ -9,7 +9,7 @@ const planSchema = new Schema({
     type: Date
   },
   monday: {
-    _breakfast: {
+    breakfast: {
       type: String
     },
     lunch: {

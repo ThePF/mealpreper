@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+// const planSchema = require('Plan');
 
 /* GET home page */
 // router.get('/login', (req, res, next) => {
@@ -24,7 +25,8 @@ router.get('/welcome', authenticationCheck, (req, res, next) => {
 });
 
 router.get('/create-plan', authenticationCheck, (req, res, next) => {
-  res.render('userarea/create-plan');
+  let weekArray = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  res.render('userarea/create-plan', { weekArray });
 });
 
 router.get('/insert-meals', (req, res, next) => {

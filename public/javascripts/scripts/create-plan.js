@@ -52,8 +52,6 @@ const wdcurrentColor = document.getElementsByClassName('cp-weekday');
 
 wdcolor1.addEventListener('click', function() {
   console.log('yes');
-  const value = window
-    .getComputedStyle(document.getElementById('cp-wdcolor1'))
-    .getPropertyValue('background-color');
-  document.getElementsByClassName('cp-weekday').style.backgroundColor = value;
+  const value = window.getComputedStyle(wdcolor1).getPropertyValue('background-color');
+  wdcurrentColor.style.backgroundColor = value;
 });

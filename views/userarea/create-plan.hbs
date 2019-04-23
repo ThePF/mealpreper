@@ -1,112 +1,96 @@
-<h2>How do you want to design your plan?</h2>
-<div class="cp-divbackgroundofcp">
-  <div class="cp-customizeTable">
-    <div class="cp-customizebackgroundcolor">
-      <p>Background color</p>
-      <div id="cp-backgroundcolors">
-        <button id="cp-bgcolor1"></button>
-        <button id="cp-bgcolor2"></button>
-        <button id="cp-bgcolor3"></button>
-        <button id="cp-bgcolor4"></button>
-        <button id="cp-bgcolor5"></button>
-        <button id="cp-bgcolor6"></button>
+<div class="create-plan-container">
+  <h2>How do you want to design your plan?</h2>
+  <div class="cp-divbackgroundofcp">
+    <div class="cp-customizeTable">
+      <div class="cp-customizebackgroundcolor">
+        <p>Background color</p>
+        <div id="cp-backgroundcolors">
+          <button id="cp-bgcolor1"></button>
+          <button id="cp-bgcolor2"></button>
+          <button id="cp-bgcolor3"></button>
+          <button id="cp-bgcolor4"></button>
+          <button id="cp-bgcolor5"></button>
+          <button id="cp-bgcolor6"></button>
+        </div>
+      </div>
+
+      <div class="cp-customizeweekdaycolor">
+        <p>Weekday color</p>
+        <div id="cp-weekdaycolor">
+          <button id="cp-wdcolor1"></button>
+          <button id="cp-wdcolor2"></button>
+          <button id="cp-wdcolor3"></button>
+          <button id="cp-wdcolor4"></button>
+          <button id="cp-wdcolor5"></button>
+          <button id="cp-wdcolor6"></button>
+        </div>
+      </div>
+
+      <p>Meal Icons color</p>
+      <p>Font Family</p>
+      <p>Background picture</p>
+    </div>
+    <div class="cp-divbackgroundofplan">
+      <div id="cp-backgroundofplan">
+
+        <table cellspacing="5" id="cp-plan">
+          <thead>
+            <tr class="cp-weekdays">
+              <th class="cp-weekday">Meals</th>
+              <th class="cp-weekday">Monday</th>
+              <th class="cp-weekday">Tuesday</th>
+              <th class="cp-weekday">Wednesday</th>
+              <th class="cp-weekday">Thursday</th>
+              <th class="cp-weekday">Friday</th>
+              <th class="cp-weekday">Saturday</th>
+              <th class="cp-weekday">Sunday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Breakfast</td>
+              {{#each weekArray}}
+              <td>Breakfast<div><button class="cp-addMealsBtns">Add</button>
+                </div>
+              </td>
+              {{/each}}
+            </tr>
+            <tr>
+              <td>Snack</td>
+              {{#each weekArray}}
+              <td>Snack<div><button>Add</button>
+                </div>
+              </td>
+              {{/each}}
+            </tr>
+            <tr>
+              <td>Lunch</td>
+              {{#each weekArray}}
+              <td>Lunch<div><button>Add</button>
+                </div>
+              </td>
+              {{/each}}
+            </tr>
+            <tr>
+              <td>Snack</td>
+              {{#each weekArray}}
+              <td>Snack<div><button>Add</button>
+                </div>
+              </td>
+              {{/each}}
+            </tr>
+            <tr>
+              <td>Dinner</td>
+              {{#each weekArray}}
+              <td>Dinner<div><button>Add</button>
+                </div>
+              </td>
+              {{/each}}
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-
-    <div class="cp-customizeweekdaycolor">
-      <p>Weekday color</p>
-      <div id="cp-weekdaycolor">
-        <button id="cp-wdcolor1"></button>
-        <button id="cp-wdcolor2"></button>
-        <button id="cp-wdcolor3"></button>
-        <button id="cp-wdcolor4"></button>
-        <button id="cp-wdcolor5"></button>
-        <button id="cp-wdcolor6"></button>
-      </div>
-    </div>
-
-    <p>Meal Icons color</p>
-    <p>Font Family</p>
-    <p>Background picture</p>
   </div>
-  <div class="cp-divbackgroundofplan">
-    <div id="cp-backgroundofplan">
-      <table cellspacing="5" id="cp-plan">
-        <thead>
-          <tr class="cp-weekdays">
-            <th class="cp-weekday">Meals</th>
-            <th class="cp-weekday">Monday</th>
-            <th class="cp-weekday">Tuesday</th>
-            <th class="cp-weekday">Wednesday</th>
-            <th class="cp-weekday">Thursday</th>
-            <th class="cp-weekday">Friday</th>
-            <th class="cp-weekday">Saturday</th>
-            <th class="cp-weekday">Sunday</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Breakfast</td>
-            <td class="cp-mealField">
-              <div class="cp-innerdivMealField">
-                <p>Breakfast1</p>
-              </div>
-              <button>Add</button>
-            </td>
-            <td>Breakfast2
-              <button>Add</button>
-            </td>
-            <td>Breakfast3
-              <button>Add</button>
-            </td>
-            <td>Breakfast4</td>
-            <td>Breakfast5</td>
-            <td>Breakfast6</td>
-            <td>Breakfast7</td>
-          </tr>
-          <tr>
-            <td>Snack</td>
-            <td>Snack1</td>
-            <td>Snack2</td>
-            <td>Snack3</td>
-            <td>Snack4</td>
-            <td>Snack5</td>
-            <td>Snack6</td>
-            <td>Snack7</td>
-          </tr>
-          <tr>
-            <td>Lunch</td>
-            <td>Lunch1</td>
-            <td>Lunch2</td>
-            <td>Lunch3</td>
-            <td>Lunch4</td>
-            <td>Lunch5</td>
-            <td>Lunch6</td>
-            <td>Lunch7</td>
-          </tr>
-          <tr>
-            <td>Snack</td>
-            <td>Snack1</td>
-            <td>Snack2</td>
-            <td>Snack3</td>
-            <td>Snack4</td>
-            <td>Snack5</td>
-            <td>Snack6</td>
-            <td>Snack7</td>
-          </tr>
-          <tr>
-            <td>Dinner</td>
-            <td>Dinner1</td>
-            <td>Dinner2</td>
-            <td>Dinner3</td>
-            <td>Dinner4</td>
-            <td>Dinner5</td>
-            <td>Dinner6</td>
-            <td>Dinner7</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+  <a href="/insert-meals">Start inserting meals</a>
 </div>
-<a href="/insert-meals">Start inserting meals</a>
