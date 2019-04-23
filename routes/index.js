@@ -7,21 +7,14 @@ const router = express.Router();
 //   res.render('auth/login');
 // });
 
-// router.use((req, res, next) => {
-//   if (req.isAuthenticated()) {
-//     next();
-//   } else {
-//     res.redirect('/login');
-//   }
-// });
-
 const authenticationCheck = (req, res, next) => {
   if (req.isAuthenticated()) next();
   else res.redirect('/auth/login');
 };
 
 router.get('/welcome', authenticationCheck, (req, res, next) => {
-  res.render('userarea/welcome');
+  console.log(req.user);
+  res.render('userarea/welcome', { username: req.user.username });
 });
 
 router.get('/create-plan', authenticationCheck, (req, res, next) => {
