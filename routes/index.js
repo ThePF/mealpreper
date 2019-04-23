@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 // const planSchema = require('Plan');
 
-/* GET home page */
+/*GET home page */
 // router.get('/login', (req, res, next) => {
 //   res.render('auth/login');
 // });

@@ -5,7 +5,7 @@
 
 /* Body section */
 body {
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   height: 720px;
   overflow: hidden; }
 
@@ -121,7 +121,7 @@ a:hover {
   text-decoration: none;
   background: #0ad800;
   color: #ffffff;
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -193,7 +193,7 @@ a:hover {
   text-decoration: none;
   background: #0069ed;
   color: #ffffff;
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -221,7 +221,7 @@ a:hover {
   text-decoration: none;
   background: #ff8c00;
   color: #ffffff;
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -277,6 +277,10 @@ a:hover {
   font-size: 1em; }
 
 /*create-plan*/
+#create-plan-container {
+  width: inherit;
+  height: inherit; }
+
 .cp-divbackgroundofcp {
   display: flex;
   justify-content: flex-start; }

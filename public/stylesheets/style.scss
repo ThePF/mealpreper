@@ -1,60 +1,60 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* Body section */
 
 body {
-    font-family: "Varela Round", sans-serif;
-    height: 720px;
-    overflow: hidden;
+  font-family: 'Varela Round', sans-serif;
+  height: 720px;
+  overflow: hidden;
 }
 
 .login-body {
-    font-size: 14px;
-    background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
-    background-size: cover;
-    width: inherit;
-    height: inherit;
+  font-size: 14px;
+  background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
+  background-size: cover;
+  width: inherit;
+  height: inherit;
 }
 
 .signup-body {
-    font-size: 14px;
-    background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
-    background-size: cover;
-    width: inherit;
-    height: inherit;
+  font-size: 14px;
+  background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
+  background-size: cover;
+  width: inherit;
+  height: inherit;
 }
 
 /* Navbar for logged in users only (in Layout) */
 
 .navbar {
-    width: 100vw;
-    height: 50px;
-    background-color: darkslategrey;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  width: 100vw;
+  height: 50px;
+  background-color: darkslategrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .navbar ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
 }
 
 .navbar li {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 40px;
-    text-decoration: none;
-    font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  text-decoration: none;
+  font-size: 1.2em;
 }
 
 .navbar li :nth-last-child(1) {
-    margin-right: 1220px;
+  margin-right: 1220px;
 }
 
 /* .navbar #brand-logo {
@@ -70,414 +70,419 @@ body {
 /* Navbar for signup and login (in Layout) */
 
 a {
-    color: #fff;
+  color: #fff;
 }
 
 a:hover {
-    color: rgb(216, 216, 216);
+  color: rgb(216, 216, 216);
 }
 
 .brand-logo {
-    display: flex;
-    text-decoration: none;
-    justify-content: left;
-    margin-left: 40px;
-    color: #fff;
-    align-content: center;
-    font-size: 40px;
-    font-weight: 900;
-    text-shadow: 3px 3px #3b3b3b;
+  display: flex;
+  text-decoration: none;
+  justify-content: left;
+  margin-left: 40px;
+  color: #fff;
+  align-content: center;
+  font-size: 40px;
+  font-weight: 900;
+  text-shadow: 3px 3px #3b3b3b;
 }
 
 /*Welcome page*/
 
 .welcome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* opacity: 0.5; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("/images/lily-banse-365344-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 720px;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0.5; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/lily-banse-365344-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 720px;
+  overflow: hidden;
 }
 
 .welcome-div {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .welcome-h2 {
-    color: white;
-    font-size: 4em;
-    margin-bottom: 10px;
-    text-align: center;
-    width: 1200px;
+  color: white;
+  font-size: 4em;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 1200px;
 }
 
 .username {
-    color: #0ad800;
+  color: #0ad800;
 }
 
 .welcome-h3 {
-    color: white;
-    margin-bottom: 90px;
-    font-size: 3em;
-    width: 1200px;
-    text-align: center;
+  color: white;
+  margin-bottom: 90px;
+  font-size: 3em;
+  width: 1200px;
+  text-align: center;
 }
 
 .welcome-btn {
-    border: none;
-    border-radius: 5px;
-    padding: 1rem 2rem;
-    margin: 0;
-    text-decoration: none;
-    background: #0ad800;
-    color: #ffffff;
-    font-family: "Varela Round", sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #0ad800;
+  color: #ffffff;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-bottom: 15px;
 }
 
 .welcome-btn:hover,
 .welcome-btn:focus {
-    background: #08a700;
+  background: #08a700;
 }
 
 .welcome-btn:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
+  outline: 1px solid #fff;
+  outline-offset: -4px;
 }
 
 .welcome-btn:active {
-    transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 .section-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
 }
 
 .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(43, 43, 43, 0.534);
-    width: 50%;
-    margin-top: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(43, 43, 43, 0.534);
+  width: 50%;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  border-radius: 20px;
 }
 
 .signup-heading {
-    color: #fff;
-    border-bottom: solid #eb8100;
-    font-size: 40px;
-    padding-bottom: 3px;
-    margin-bottom: 40px;
+  color: #fff;
+  border-bottom: solid #eb8100;
+  font-size: 40px;
+  padding-bottom: 3px;
+  margin-bottom: 40px;
 }
 
 .login-heading {
-    color: #fff;
-    border-bottom: solid #0069ed;
-    font-size: 40px;
-    padding-bottom: 3px;
-    margin-bottom: 40px;
+  color: #fff;
+  border-bottom: solid #0069ed;
+  font-size: 40px;
+  padding-bottom: 3px;
+  margin-bottom: 40px;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-size: 15px;
 }
 
 .form #username,
 #password {
-    height: 30px;
-    border-radius: 5px;
+  height: 30px;
+  border-radius: 5px;
 }
 
 .form .login-btn {
-    border: none;
-    border-radius: 5px;
-    padding: 1rem 2rem;
-    margin: 0;
-    text-decoration: none;
-    background: #0069ed;
-    color: #ffffff;
-    font-family: "Varela Round", sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-bottom: 15px;
 }
 
 .login-btn:hover,
 .login-btn:focus {
-    background: #0053ba;
+  background: #0053ba;
 }
 
 .login-btn:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
+  outline: 1px solid #fff;
+  outline-offset: -4px;
 }
 
 .login-btn:active {
-    transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 .form .signup-btn {
-    border: none;
-    border-radius: 5px;
-    padding: 1rem 2rem;
-    margin: 0;
-    text-decoration: none;
-    background: #ff8c00;
-    color: #ffffff;
-    font-family: "Varela Round", sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #ff8c00;
+  color: #ffffff;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-bottom: 15px;
 }
 
 .signup-btn:hover,
 .signup-btn:focus {
-    background: #eb8100;
+  background: #eb8100;
 }
 
 .signup-btn:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
+  outline: 1px solid #fff;
+  outline-offset: -4px;
 }
 
 .signup-btn:active {
-    transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 .fb-login-button {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 /*layout*/
 
 .navbar {
-    width: 100vw;
-    height: 50px;
-    background-color: darkslategrey;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+  width: 100vw;
+  height: 50px;
+  background-color: darkslategrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .navbar ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .navbar li {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 40px;
-    text-decoration: none;
-    font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  text-decoration: none;
+  font-size: 1.2em;
 }
 
 .navbar li :nth-last-child(1) {
-    margin-right: 1220px;
+  margin-right: 1220px;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: #f7f9f9;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+  text-decoration: none;
+  color: #f7f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
 }
 
 /*create-plan*/
 
+#create-plan-container {
+  width: inherit;
+  height: inherit;
+}
+
 .cp-divbackgroundofcp {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* Customize */
 
 .cp-customizeTable {
-    width: 300px;
-    height: 600px;
-    background-color: lightgray;
+  width: 300px;
+  height: 600px;
+  background-color: lightgray;
 }
 
 .cp-customizebackgroundcolor {
-    width: inherit;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
+  width: inherit;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
 }
 
 #cp-backgroundcolors {
-    width: inherit;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10px;
+  width: inherit;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
 #cp-bgcolor1 {
-    width: 15px;
-    height: 15px;
-    background-color: lightblue;
+  width: 15px;
+  height: 15px;
+  background-color: lightblue;
 }
 
 #cp-bgcolor2 {
-    width: 15px;
-    height: 15px;
-    background-color: lightcyan;
+  width: 15px;
+  height: 15px;
+  background-color: lightcyan;
 }
 
 #cp-bgcolor3 {
-    width: 15px;
-    height: 15px;
-    background-color: lightseagreen;
+  width: 15px;
+  height: 15px;
+  background-color: lightseagreen;
 }
 
 #cp-bgcolor4 {
-    width: 15px;
-    height: 15px;
-    background-color: darkgoldenrod;
+  width: 15px;
+  height: 15px;
+  background-color: darkgoldenrod;
 }
 
 #cp-bgcolor5 {
-    width: 15px;
-    height: 15px;
-    background-color: darkmagenta;
+  width: 15px;
+  height: 15px;
+  background-color: darkmagenta;
 }
 
 #cp-bgcolor6 {
-    width: 15px;
-    height: 15px;
-    background-color: darkolivegreen;
+  width: 15px;
+  height: 15px;
+  background-color: darkolivegreen;
 }
 
 .cp-customizeweekdaycolor {
-    width: inherit;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
+  width: inherit;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
 }
 #cp-weekdaycolor {
-    width: inherit;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10px;
+  width: inherit;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
 #cp-wdcolor1 {
-    width: 15px;
-    height: 15px;
-    background-color: lightblue;
+  width: 15px;
+  height: 15px;
+  background-color: lightblue;
 }
 
 #cp-wdcolor2 {
-    width: 15px;
-    height: 15px;
-    background-color: lightcyan;
+  width: 15px;
+  height: 15px;
+  background-color: lightcyan;
 }
 
 #cp-wdcolor3 {
-    width: 15px;
-    height: 15px;
-    background-color: lightseagreen;
+  width: 15px;
+  height: 15px;
+  background-color: lightseagreen;
 }
 
 #cp-wdcolor4 {
-    width: 15px;
-    height: 15px;
-    background-color: darkgoldenrod;
+  width: 15px;
+  height: 15px;
+  background-color: darkgoldenrod;
 }
 
 #cp-wdcolor5 {
-    width: 15px;
-    height: 15px;
-    background-color: darkmagenta;
+  width: 15px;
+  height: 15px;
+  background-color: darkmagenta;
 }
 
 #cp-wdcolor6 {
-    width: 15px;
-    height: 15px;
-    background-color: darkolivegreen;
+  width: 15px;
+  height: 15px;
+  background-color: darkolivegreen;
 }
 
 .cp-divbackgroundofplan {
-    width: 1200px;
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 1200px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #cp-backgroundofplan {
-    width: 950px;
-    height: 550px;
-    background-color: lightcoral;
+  width: 950px;
+  height: 550px;
+  background-color: lightcoral;
 }
 
 table {
-    border: 1px solid black;
-    width: inherit;
-    height: inherit;
+  border: 1px solid black;
+  width: inherit;
+  height: inherit;
 }
 
 th {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 
 td {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 #cp-plan  {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .cp-weekday {
-    background-color: blue;
+  background-color: blue;
 }
 
 .cp-weekdays {
-    width: 50px;
-    height: 50px;
-    border-collapse: 1px solid black;
+  width: 50px;
+  height: 50px;
+  border-collapse: 1px solid black;
 }
 
 // .cp-mealField {
