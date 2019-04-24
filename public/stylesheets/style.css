@@ -16,12 +16,36 @@ html {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .landing-login-btn {
+    font-size: 1.1rem;
+    display: inline-block;
+    width: 6.2rem;
+    padding: 1rem 3rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    text-decoration: none; }
+  .landing-signup-btn {
+    font-size: 1.1rem;
+    display: inline-block;
+    width: 6.2rem;
+    padding: 1rem 3rem;
+    color: #fff;
+    background-color: #08a700;
+    border: 2px solid #08a700;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    margin-top: 3vh; } }
 
 /* Body section */
 body {
-  font-family: 'Varela Round', sans-serif;
-  height: 720px;
+  font-family: "Varela Round", sans-serif;
+  height: 106vh;
   overflow: hidden; }
 
 .login-body {
@@ -39,7 +63,7 @@ body {
   height: inherit; }
 
 .landing-body {
-  font-size: 0.9px;
+  font-size: 0.9rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1467453678174-768ec283a940?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1456&q=80");
   background-size: cover;
   width: inherit;
@@ -49,7 +73,7 @@ body {
 .navbar {
   width: 100vw;
   height: 50px;
-  background-color: darkslategrey;
+  background-color: #292929;
   display: flex;
   flex-direction: row-reverse; }
 
@@ -94,7 +118,7 @@ a:hover {
   margin-left: 40px;
   color: #fff;
   align-content: center;
-  font-size: 2.5rem;
+  font-size: 3vw;
   font-weight: 900;
   text-shadow: 3px 3px #a5a5a5;
   width: 70px; }
@@ -142,7 +166,7 @@ a:hover {
   text-decoration: none;
   background: #0ad800;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -154,10 +178,6 @@ a:hover {
 .welcome-btn:hover,
 .welcome-btn:focus {
   background: #08a700; }
-
-.welcome-btn:focus {
-  outline: 1px solid #fff;
-  outline-offset: -4px; }
 
 .welcome-btn:active {
   transform: scale(0.99); }
@@ -195,7 +215,7 @@ a:hover {
     border-color: #0ad800; } }
 
 .landing-text {
-  font-size: 2rem;
+  font-size: 2em;
   line-height: 1.5em;
   color: rgba(255, 255, 255, 0.61);
   text-align: center;
@@ -222,10 +242,14 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 6.2rem; }
+  margin-top: 6.2rem;
+  margin-right: 5vh;
+  margin-left: 5vh; }
 
 .text-wrapper {
-  width: 62.5rem; }
+  flex-wrap: wrap;
+  margin-left: 5vw;
+  margin-right: 5vw; }
 
 .buttons {
   display: flex;
@@ -329,7 +353,7 @@ span {
   text-decoration: none;
   background: #0069ed;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -357,7 +381,7 @@ span {
   text-decoration: none;
   background: #ff8c00;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
