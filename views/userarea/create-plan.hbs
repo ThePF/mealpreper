@@ -50,9 +50,12 @@
           <tbody class="cp-tablebody">
             <tr>
               <td>Breakfast</td>
-
               {{#each weekArray}}
-              <td>Breakfast<div><button id="{{@index}}bfast"><a href="/add-meals/{{@index}}/bfast">Add</a></button>
+              <td>
+                {{#with (lookup ../plan @index)}}
+                {{breakfast.name}}
+                {{/with}}
+                <div><button id="{{@index}}bfast"><a href="/add-meals/{{@index}}/bfast">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -60,7 +63,11 @@
             <tr>
               <td>Snack</td>
               {{#each weekArray}}
-              <td>Snack<div><button id="{{@index}}msnack"><a href="/add-meals/{{@index}}/msnack">Add</a></button>
+              <td>
+                {{#with (lookup ../plan @index)}}
+                {{morningsnack.name}}
+                {{/with}}
+                <div><button id="{{@index}}msnack"><a href="/add-meals/{{@index}}/msnack">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -68,7 +75,10 @@
             <tr>
               <td>Lunch</td>
               {{#each weekArray}}
-              <td>Lunch<div><button id="{{@index}}lunch"><a href="/add-meals/{{@index}}/lunch">Add</a></button>
+              <td>{{#with (lookup ../plan @index)}}
+                {{lunch.name}}
+                {{/with}}
+                <div><button id="{{@index}}lunch"><a href="/add-meals/{{@index}}/lunch">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -76,7 +86,10 @@
             <tr>
               <td>Snack</td>
               {{#each weekArray}}
-              <td>Snack<div><button id="{{@index}}lsnack"><a href="/add-meals/{{@index}}/lsnack">Add</a></button>
+              <td>{{#with (lookup ../plan @index)}}
+                {{afternoonsnack.name}}
+                {{/with}}
+                <div><button id="{{@index}}lsnack"><a href="/add-meals/{{@index}}/lsnack">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -84,7 +97,10 @@
             <tr>
               <td>Dinner</td>
               {{#each weekArray}}
-              <td>Dinner<div><button id="{{@index}}dinner"><a href="/add-meals/{{@index}}/dinner">Add</a></button>
+              <td>{{#with (lookup ../plan @index)}}
+                {{dinner.name}}
+                {{/with}}
+                <div><button id="{{@index}}dinner"><a href="/add-meals/{{@index}}/dinner">Add</a></button>
                 </div>
               </td>
               {{/each}}

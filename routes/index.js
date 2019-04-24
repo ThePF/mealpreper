@@ -32,18 +32,37 @@ router.get('/welcome', authenticationCheck, (req, res, next) => {
 
 router.get('/create-plan', authenticationCheck, (req, res, next) => {
   let id = req.user._id;
-  User.findById({ _id: id })
-    .populate('_plan')
-    .then(userId => {
-      let user = userId;
-
+  Plan.findOne({ _owner: id })
+    .populate('weekdays.breakfast')
+    .populate('weekdays.morningsnack')
+    .populate('weekdays.lunch')
+    .populate('weekdays.afternoonsnack')
+    .populate('weekdays.dinner')
+    .then(plan => {
       let weekArray = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-      res.render('userarea/create-plan', { weekArray, user });
+      console.log(plan.weekdays);
+      res.render('userarea/create-plan', { weekArray, user: req.user, plan: plan.weekdays });
     });
 });
 
 router.get('/add-meals/:dayIndex/:meal', authenticationCheck, (req, res, next) => {
-  res.render('userarea/add-meals', { day: req.params.dayIndex, meal: req.params.meal });
+  let id = req.user._id;
+  Plan.findOne({ _owner: id })
+    .populate('weekdays.breakfast')
+    .populate('weekdays.morningsnack')
+    .populate('weekdays.lunch')
+    .populate('weekdays.afternoonsnack')
+    .populate('weekdays.dinner')
+    .then(plan => {
+      let weekArray = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+      res.render('userarea/add-meals', {
+        day: req.params.dayIndex,
+        meal: req.params.meal,
+        weekArray,
+        user: req.user,
+        plan: plan.weekdays
+      });
+    });
 });
 
 router.post('/add-meals/:dayIndex/:meal', (req, res) => {
