@@ -12,15 +12,16 @@ html {
     body {
         font-size: 1rem;
         background-color: red;
+        overflow-x: scroll;
     }
 
-    .buttons {
+    /*  .buttons {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
     .landing-login-btn {
         font-size: 1.1rem;
@@ -47,7 +48,7 @@ html {
         text-align: center;
         outline: none;
         text-decoration: none;
-        margin-top: 3vh;
+        /* margin-top: 3vh; */
     }
 }
 
@@ -56,7 +57,7 @@ html {
 body {
     font-family: "Varela Round", sans-serif;
     height: 106vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .login-body {
@@ -222,6 +223,9 @@ a:hover {
 // LANDING PAGE
 
 .landing-heading {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
     color: #fff;
     font-size: 2.5em;
     font-family: "Varela Round", sans-serif;
@@ -306,6 +310,7 @@ a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 // LANDING GHOST BUTTONS
@@ -321,7 +326,8 @@ a:hover {
     text-align: center;
     outline: none;
     text-decoration: none;
-    margin-right: 3px;
+    margin: 5px;
+    /* margin-right: 3px; */
 }
 .landing-login-btn:hover,
 .landing-login-btn:active {
@@ -330,6 +336,7 @@ a:hover {
 }
 
 .landing-signup-btn {
+    margin: 5px;
     font-size: 1.1rem;
     display: inline-block;
     width: 6.2rem;
@@ -341,7 +348,7 @@ a:hover {
     text-align: center;
     outline: none;
     text-decoration: none;
-    margin-left: 3px;
+    /*  margin-left: 3px; */
 }
 .landing-signup-btn:hover,
 .landing-signup-btn:active {
@@ -392,14 +399,17 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: #fff;
     font-size: 1rem;
 }
 
-.form #username,
+#username,
 #password {
+    width: 50%;
     height: 1.9rem;
     border-radius: 5px;
+    display: block;
 }
 
 .account-message {
@@ -476,6 +486,13 @@ span {
 #create-plan-container {
     width: inherit;
     height: inherit;
+    background: linear-gradient(90deg, rgba(1, 0, 19, 1) 0%, rgba(88, 97, 122, 1) 64%, rgba(255, 255, 255, 1) 100%);
+}
+
+.cp-heading-wrapper {
+    color: #fff;
+    margin: 0 20px 20px;
+    padding-top: 20px;
 }
 
 .cp-divbackgroundofcp {
@@ -487,8 +504,10 @@ span {
 
 .cp-customizeTable {
     width: 300px;
-    height: 600px;
-    background-color: lightgray;
+    height: inherit;
+    background-color: rgba(211, 211, 211, 0.322);
+    margin-left: 10px;
+    border-radius: 20px;
 }
 
 .cp-customizebackgroundcolor {
@@ -496,6 +515,7 @@ span {
     height: 80px;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 #cp-backgroundcolors {
@@ -548,6 +568,7 @@ span {
     height: 80px;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 #cp-weekdaycolor {
     width: inherit;
@@ -594,6 +615,45 @@ span {
     background-color: darkolivegreen;
 }
 
+p {
+    color: #fff;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.style-plan {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.shoppinglist {
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    text-decoration: none;
+    background: #ff8c00;
+    color: #ffffff;
+    font-family: "Varela Round", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-left: 20px;
+}
+
+.shoppinglist:hover,
+.signup-btn:focus {
+    background: #eb8100;
+}
+
+.shoppinglist:active {
+    transform: scale(0.99);
+}
+
+//plan styling//
+
 .cp-divbackgroundofplan {
     width: 1200px;
     height: inherit;
@@ -604,13 +664,17 @@ span {
 #cp-backgroundofplan {
     width: 950px;
     height: 550px;
-    background-color: lightcoral;
+    background-color: #08a700;
+    /* background-image: url(https://images.unsplash.com/photo-1527324546834-40c5d61f140f?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
+    background-size: cover; */
+    border-radius: 20px;
 }
 
 table {
-    border: 1px solid black;
+    border: 3px solid black;
     width: inherit;
     height: inherit;
+    border-radius: 20px;
 }
 
 th {
@@ -618,7 +682,9 @@ th {
 }
 
 td {
-    border-bottom: 1px solid black;
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
 }
 
 #cp-plan  {
@@ -627,15 +693,24 @@ td {
 
 .cp-weekday {
     background-color: blue;
+    border-radius: 10px;
 }
 
 .cp-weekdays {
     width: 50px;
     height: 50px;
-    border-collapse: 1px solid black;
+    /* border-collapse: 1px solid black; */
 }
 
 // add-meals//
+
+/* .meal-btn {
+    color: #fff;
+    text-decoration: none;
+    background-color: #0ad800;
+    padding: 2px 2px;
+    border-radius: 3px;
+} */
 
 .cp-addMealsBtns a {
     color: black;
@@ -669,6 +744,7 @@ td {
     align-items: center;
     color: white;
     flex-direction: column;
+    border-radius: 20px;
 }
 
 .am-add-mealsForm form {
@@ -676,18 +752,55 @@ td {
     height: 300px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 90px;
+}
+
+.am-add-mealsForm label {
+    font-size: 14px;
 }
 
 .am-add-mealsForm input {
-    width: 200px;
-    height: 200px;
+    width: 80%;
+    margin-bottom: 15px;
+    border-radius: 5px;
 }
 
-.am-add-mealsForm button {
+/* .am-add-mealsForm button {
     width: 50px;
     height: 20px;
     margin-top: 30px;
+} */
+
+//
+
+.am-add-mealsForm button {
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 0.5em;
+    width: 5em;
+    text-decoration: none;
+    background: #0ad800;
+    color: #ffffff;
+    font-family: "Varela Round", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-bottom: 15px;
 }
+
+.am-add-mealsForm button:hover {
+    background: #08a700;
+}
+
+.am-add-mealsForm button:active {
+    transform: scale(0.99);
+}
+
+//
 
 .am-mealsList {
     width: 300px;

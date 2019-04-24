@@ -1,35 +1,39 @@
 <div id="create-plan-container">
-  <h2>How do you want to design your plan?</h2>
+  <div class="cp-heading-wrapper">
+    <h2>How do you want to design your plan, {{username}}?</h2>
+  </div>
   <div class="cp-divbackgroundofcp">
     <div class="cp-customizeTable">
-      <div class="cp-customizebackgroundcolor">
-        <p>Background color</p>
-        <div id="cp-backgroundcolors">
-          <button id="cp-bgcolor1"></button>
-          <button id="cp-bgcolor2"></button>
-          <button id="cp-bgcolor3"></button>
-          <button id="cp-bgcolor4"></button>
-          <button id="cp-bgcolor5"></button>
-          <button id="cp-bgcolor6"></button>
+      <div class="customize-wrapper">
+        <div class="cp-customizebackgroundcolor">
+          <p>Select background color</p>
+          <div id="cp-backgroundcolors">
+            <button id="cp-bgcolor1"></button>
+            <button id="cp-bgcolor2"></button>
+            <button id="cp-bgcolor3"></button>
+            <button id="cp-bgcolor4"></button>
+            <button id="cp-bgcolor5"></button>
+            <button id="cp-bgcolor6"></button>
+          </div>
         </div>
-      </div>
 
-      <div class="cp-customizeweekdaycolor">
-        <p>Weekday color</p>
-        <div id="cp-weekdaycolor">
-          <button id="cp-wdcolor1"></button>
-          <button id="cp-wdcolor2"></button>
-          <button id="cp-wdcolor3"></button>
-          <button id="cp-wdcolor4"></button>
-          <button id="cp-wdcolor5"></button>
-          <button id="cp-wdcolor6"></button>
+        <div class="cp-customizeweekdaycolor">
+          <p>Select weekday color</p>
+          <div id="cp-weekdaycolor">
+            <button id="cp-wdcolor1"></button>
+            <button id="cp-wdcolor2"></button>
+            <button id="cp-wdcolor3"></button>
+            <button id="cp-wdcolor4"></button>
+            <button id="cp-wdcolor5"></button>
+            <button id="cp-wdcolor6"></button>
+          </div>
         </div>
-      </div>
 
-      <p>Meal Icons color</p>
-      <p>Font Family</p>
-      <p>Background picture</p>
-      <a href="/shoppinglist">View Shoppinglist</a>
+        <p class="style-plan">Meal Icons color</p>
+        <p class="style-plan"> Font Family</p>
+        <p class="style-plan">Background picture</p>
+        <a class="shoppinglist" href="/shoppinglist">View Shoppinglist</a>
+      </div>
     </div>
     <div class="cp-divbackgroundofplan">
       <div id="cp-backgroundofplan">
