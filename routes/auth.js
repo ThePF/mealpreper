@@ -5,6 +5,7 @@ const Meal = require('../models/Meal');
 
 const router = express.Router();
 const User = require('../models/User');
+const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy; // or just Strategy??
 
 // Bcrypt to encrypt passwords
 const bcrypt = require('bcrypt');
@@ -17,6 +18,10 @@ router.use((req, res, next) => {
     res.redirect('/auth/login');
   }
 });
+
+//CODE BELOW ADDED BY LUKAS TUESDAY MORNING
+
+// ------ UNTIL HERE ----------------
 
 router.get('/login', (req, res, next) => {
   res.render('auth/login', { message: req.flash('error'), layout: false });
@@ -69,12 +74,31 @@ router.post('/signup', (req, res, next) => {
   });
 });
 
+// FACEBOOK
+
 router.get('/facebook', passport.authenticate('facebook'));
 router.get(
   '/facebook/callback',
   passport.authenticate('facebook', {
     successRedirect: '/welcome',
     failureRedirect: '/login'
+  })
+);
+
+// GOOGLE
+
+router.get(
+  '/google',
+  passport.authenticate('google', {
+    scope: 'email'
+  })
+);
+
+router.get(
+  '/google/callback',
+  passport.authenticate('google', {
+    failureRedirect: '/login',
+    successRedirect: '/welcome'
   })
 );
 
