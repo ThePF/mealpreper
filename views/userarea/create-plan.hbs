@@ -50,24 +50,17 @@
           <tbody>
             <tr>
               <td>Breakfast</td>
-              <td id="mondaybfast">Breakfast <button><a href="/add-meals">Add</a></button></td>
-              <td id="tuesdaybfast">Breakfast <button><a href="/add-meals">Add</a></button></td>
-              <td id="wednesdaybfast">Breakfast <button><a href="/add-meals">Add</a></button></td>
-              <td id="thursdaybfast">Breakfast <button><a href="/add-meals">Add</a></button></td>
-              <td id="fridaybfast">Breakfast <button><a href="/add-meals">Add</a></button></td>
-              <td id="saturdaybfast">Breakfast <button><a href="/add-meals">Add</a></button></td>
-              <td id="sundaybfast">Breakfast <button><a href="/add-meals">Add</a></button></td>
-              {{!-- <td>Breakfast</td>
+
               {{#each weekArray}}
-              <td>Breakfast<div><button class="cp-addMealsBtns"><a href="/add-meals">Add</a></button>
+              <td>Breakfast<div><button id="{{@index}}bfast"><a href="/add-meals">Add</a></button>
                 </div>
               </td>
-              {{!-- {{/each}} --}}
+              {{/each}}
             </tr>
             <tr>
               <td>Snack</td>
               {{#each weekArray}}
-              <td id="{{@index}}bfast">Snack<div><button class="cp-addMealsBtns"><a href="/add-meals">Add</a></button>
+              <td>Snack<div><button id="{{@index}}msnack"><a href="/add-meals">Add</a></button>
                 </div>
               </td>
               {{/each}}

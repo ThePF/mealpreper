@@ -184,8 +184,8 @@ a:hover {
 
 .landing-heading {
   color: #fff;
-  font-size: 2.5em;
-  font-family: "Varela Round", sans-serif;
+  font-size: 2.5rem;
+  font-family: 'Varela Round', sans-serif;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid #0ad800;

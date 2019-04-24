@@ -11,13 +11,13 @@ const GoogleStrategy = require("passport-google-oauth").OAuth2Strategy // or jus
 const bcrypt = require("bcrypt")
 const bcryptSalt = 10
 
-// router.use((req, res, next) => {
-//   if (req.user) {
-//     next();
-//   } else {
-//     res.redirect('/auth/login');
-//   }
-// });
+/* router.use((req, res, next) => {
+  if (req.user) {
+    next();
+  } else {
+    res.redirect('/auth/login');
+  }
+}); */
 
 //CODE BELOW ADDED BY LUKAS TUESDAY MORNING
 
@@ -44,6 +44,8 @@ router.get("/signup", (req, res, next) => {
 router.post("/signup", (req, res, next) => {
     const username = req.body.username
     const password = req.body.password
+    const _plan = req.body._plan
+    console.log("test")
     if (username === "" || password === "") {
         res.render("auth/signup", { message: "Indicate username and password" })
         return
@@ -61,13 +63,33 @@ router.post("/signup", (req, res, next) => {
         const newUser = new User({
             username,
             password: hashPass
+            // _plan: '0'
         })
+
+        // const newPlan = new Plan({
+        //   fromDate,
+        //   toDate,
+        //   weekdays
+        // });
+
+        // const newMeal = new Meal({
+        //   name,
+        //   ingredients,
+        //   color,
+        //   calories
+        // });
 
         newUser
             .save()
-            .then(() => {
-                req.logIn(newUser, () => {
-                    res.redirect("/welcome")
+            .then(user => {
+                Plan.create({
+                    _owner: user._id
+                }).then(() => {
+                    Meal.create().then(() => {
+                        req.logIn(newUser, () => {
+                            res.redirect("/welcome")
+                        })
+                    })
                 })
             })
             .catch(err => {
