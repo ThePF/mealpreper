@@ -3,6 +3,21 @@
   padding: 0;
   margin: 0; }
 
+html {
+  font-size: 100%; }
+
+/* 768px and smaller */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 1rem;
+    background-color: red; }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
 /* Body section */
 body {
   font-family: "Varela Round", sans-serif;
@@ -10,15 +25,22 @@ body {
   overflow: hidden; }
 
 .login-body {
-  font-size: 14px;
+  font-size: 0.9rem;
   background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
   background-size: cover;
   width: inherit;
   height: inherit; }
 
 .signup-body {
-  font-size: 14px;
-  background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
+  font-size: 0.9rem;
+  background-image: url(https://images.unsplash.com/photo-1540914124281-342587941389?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80);
+  background-size: cover;
+  width: inherit;
+  height: inherit; }
+
+.landing-body {
+  font-size: 0.9px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1467453678174-768ec283a940?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1456&q=80");
   background-size: cover;
   width: inherit;
   height: inherit; }
@@ -41,12 +63,12 @@ body {
   display: flex;
   justify-content: space-between;
   margin-right: 5vw;
-  font-size: 1.2em; }
+  font-size: 1.2rem; }
 
 .navbar #logo {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 900;
   text-shadow: 3px 3px #3b3b3b; }
 
@@ -57,30 +79,30 @@ body {
   text-align: right;
   text-decoration: none; }
 
-/* Navbar for signup and login (in Layout) */
+/* Navbar for landing, signup and login page (not in layout) */
 a {
   color: #fff; }
 
 a:hover {
-  color: #d8d8d8; }
+  color: #e9e9e9; }
 
 .brand-logo {
   display: flex;
   text-decoration: none;
   justify-content: left;
+  padding-top: 20px;
   margin-left: 40px;
   color: #fff;
   align-content: center;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 900;
-  text-shadow: 3px 3px #3b3b3b; }
+  text-shadow: 3px 3px #a5a5a5;
+  width: 70px; }
 
-/*Welcome page*/
 .welcome {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* opacity: 0.5; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/lily-banse-365344-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -96,7 +118,7 @@ a:hover {
 
 .welcome-h2 {
   color: white;
-  font-size: 4em;
+  font-size: 4rem;
   margin-bottom: 10px;
   text-align: center;
   width: 1200px; }
@@ -107,7 +129,7 @@ a:hover {
 .welcome-h3 {
   color: white;
   margin-bottom: 90px;
-  font-size: 3em;
+  font-size: 3rem;
   width: 1200px;
   text-align: center; }
 
@@ -139,8 +161,117 @@ a:hover {
 .welcome-btn:active {
   transform: scale(0.99); }
 
+.landing-heading {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: "Varela Round", sans-serif;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #0ad800;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  margin-bottom: 40px;
+  letter-spacing: 0.1em;
+  /* Adjust as needed */
+  animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite; }
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 40%; } }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent; }
+  50% {
+    border-color: #0ad800; } }
+
+.landing-text {
+  font-size: 2rem;
+  line-height: 1.5em;
+  color: rgba(255, 255, 255, 0.61);
+  text-align: center;
+  margin-bottom: 50px;
+  -webkit-animation: fadein 7s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.span-text {
+  color: #fff; }
+
+.landing-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6.2rem; }
+
+.text-wrapper {
+  width: 62.5rem; }
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.landing-login-btn {
+  font-size: 1.1rem;
+  display: inline-block;
+  width: 6.2rem;
+  padding: 1rem 3rem;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  margin-right: 3px; }
+
+.landing-login-btn:hover,
+.landing-login-btn:active {
+  background-color: #fff;
+  color: #000; }
+
+.landing-signup-btn {
+  font-size: 1.1rem;
+  display: inline-block;
+  width: 6.2rem;
+  padding: 1rem 3rem;
+  color: #fff;
+  background-color: #08a700;
+  border: 2px solid #08a700;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  margin-left: 3px; }
+
+.landing-signup-btn:hover,
+.landing-signup-btn:active {
+  background-color: #08a70000;
+  color: #08a700; }
+
 .section-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 3rem; }
@@ -150,44 +281,50 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(43, 43, 43, 0.534);
+  background-color: rgba(43, 43, 43, 0.7);
   width: 50%;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding-top: 2rem;
   padding-bottom: 3rem;
-  border-radius: 20px; }
+  border-radius: 1.8rem; }
 
 .signup-heading {
   color: #fff;
   border-bottom: solid #eb8100;
-  font-size: 40px;
+  font-size: 2.5rem;
   padding-bottom: 3px;
-  margin-bottom: 40px; }
+  margin-bottom: 2.5rem; }
 
 .login-heading {
   color: #fff;
   border-bottom: solid #0069ed;
-  font-size: 40px;
+  font-size: 2.5rem;
   padding-bottom: 3px;
-  margin-bottom: 40px; }
+  margin-bottom: 2.5rem; }
 
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  font-size: 15px; }
+  font-size: 1rem; }
 
 .form #username,
 #password {
-  height: 30px;
+  height: 1.9rem;
   border-radius: 5px; }
 
-.form .login-btn {
+.account-message {
+  padding-bottom: 5px; }
+
+span {
+  color: #fff; }
+
+.login-btn {
   border: none;
   border-radius: 5px;
-  padding: 1rem 2rem;
-  margin: 0;
+  padding: 1rem 3rem;
+  margin-right: 3px;
   text-decoration: none;
   background: #0069ed;
   color: #ffffff;
@@ -198,24 +335,24 @@ a:hover {
   transition: background 250ms ease-in-out, transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
-  margin-bottom: 15px; }
+  margin-bottom: 1rem; }
 
 .login-btn:hover,
 .login-btn:focus {
   background: #0053ba; }
 
-.login-btn:focus {
-  outline: 1px solid #fff;
-  outline-offset: -4px; }
-
+/* .login-btn:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+} */
 .login-btn:active {
   transform: scale(0.99); }
 
-.form .signup-btn {
+.signup-btn {
   border: none;
   border-radius: 5px;
-  padding: 1rem 2rem;
-  margin: 0;
+  padding: 1rem 2.5rem;
+  margin-left: 3px;
   text-decoration: none;
   background: #ff8c00;
   color: #ffffff;
@@ -226,23 +363,14 @@ a:hover {
   transition: background 250ms ease-in-out, transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
-  margin-bottom: 15px; }
+  margin-bottom: 1rem; }
 
 .signup-btn:hover,
 .signup-btn:focus {
   background: #eb8100; }
 
-.signup-btn:focus {
-  outline: 1px solid #fff;
-  outline-offset: -4px; }
-
 .signup-btn:active {
   transform: scale(0.99); }
-
-.fb-login-button {
-  display: flex;
-  justify-content: center;
-  align-content: center; }
 
 /*create-plan*/
 .cp-divbackgroundofcp {

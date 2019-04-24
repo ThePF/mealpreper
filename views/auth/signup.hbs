@@ -5,13 +5,13 @@
     <section class="section">
       <h2 class="signup-heading">Sign Up</h2>
       <form class="form" action="/auth/signup" method="POST" id="form-container">
-        <label for="username">Username</label><br>
-        <input id="username" type="text" name="username" placeholder="JonSnow">
+        <label for="username">New Username</label><br>
+        <input id="username" type="text" name="username" placeholder="Your username goes here">
 
         <br><br>
 
-        <label for="password">Password</label><br>
-        <input id="password" type="password" name="password" placeholder="Your password">
+        <label for="password">New Password</label><br>
+        <input id="password" type="password" name="password" placeholder="Your best password here">
         <br>
         {{#if message }}
         <div class="error-message">{{ message }}</div>
@@ -19,7 +19,7 @@
 
         <br><br>
 
-        <button class="signup-btn" href="/welcome">Create account</button>
+        <a class="signup-btn" href="/welcome">Create account</a>
 
         <p class="account-message">
           Do you already have an account?

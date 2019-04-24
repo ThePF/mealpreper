@@ -1,39 +1,24 @@
-<h1>{{title}}</h1>
-<h2>Welcome to {{title}}</h2>
-
-<div class="login-body">
-  {{!-- <nav class="navbar-logsign"> --}}
+<div class="landing-body">
   <div class="navbar-wrapper">
     <a href="/" class="brand-logo"><img id="logo" src="">MEALPREP</a>
   </div>
   </nav>
-  <div class="section-wrapper">
-    <section class="section">
-      <h2 class="login-heading">Login</h2>
-      <form class="form" action="/auth/login" method="POST" id="form-container">
-        <label for="username">Username</label><br>
-        <input id="username" type="text" name="username" placeholder="Your username goes here">
+  <div class="landing-wrapper">
+    <h1 class="landing-heading">Welcome to MEALPREP</h1>
+    <div class="text-wrapper">
+      <p class="landing-text">Mealprep allows you to <span class="span-text">prepare your meals</span> for the whole
+        week
+        and automatically generates a
+        <span class="span-text">shopping list</span> and <span class="span-text">weekly plan</span> ready to print.</p>
+    </div>
+  </div>
 
-        <br><br>
-
-        <label for="password">Password</label><br>
-        <input id="password" type="password" name="password" placeholder="Your best password here">
-        <br>
-        {{#if message }}
-        <div class="error-message">{{ message }}</div>
-        {{/if}}
-
-        <br><br>
-
-        <button class="login-btn">Login</button>
-
-        <p class="account-message">
-          Don't have an account yet?
-          <a href="/auth/signup">Signup</a>
-        </p>
-      </form>
-      <a href="/auth/facebook">Login with Facebook</a>
-    </section>
+  {{#if message }}
+  <div class="error-message">{{ message }}</div>
+  {{/if}}
+  <div class="buttons">
+    <a class="landing-login-btn" href="/auth/login">Login</a>
+    <a class="landing-signup-btn" href="/auth/signup">Register</a>
   </div>
 </div>
 

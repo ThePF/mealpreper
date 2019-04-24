@@ -10,7 +10,7 @@ const router = express.Router()
 //CODE BELOW ADDED BY LUKAS TUESDAY MORNING
 
 router.get("/", (req, res, next) => {
-    res.render("index")
+    res.render("index", { layout: false })
 })
 
 // ------ UNTIL HERE ----------------
