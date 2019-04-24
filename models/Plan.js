@@ -8,81 +8,118 @@ const planSchema = new Schema({
   toDate: {
     type: Date
   },
+  weekdays: [
+    {
+      breakfast: {
+        type: Schema.Types.ObjectId,
+        ref: 'Meal'
+      },
+      lunch: {
+        type: Schema.Types.ObjectId,
+        ref: 'Meal'
+      },
+      dinner: {
+        type: Schema.Types.ObjectId,
+        ref: 'Meal'
+      }
+    }
+  ],
   monday: {
     breakfast: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     },
     lunch: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     },
     dinner: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     }
   },
   tuesday: {
     breakfast: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     },
     lunch: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     },
     dinner: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     }
   },
   wednesday: {
     breakfast: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     },
     lunch: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     },
     dinner: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     }
   },
   thursday: {
     breakfast: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     },
     lunch: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     },
     dinner: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     }
   },
   friday: {
     breakfast: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     },
     lunch: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     },
     dinner: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     }
   },
   saturday: {
     breakfast: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     },
     lunch: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     },
     dinner: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     }
   },
   sunday: {
     breakfast: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     },
     lunch: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     },
     dinner: {
-      type: String
+      type: Schema.Types.ObjectId,
+      ref: 'Meal'
     }
   }
 });

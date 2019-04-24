@@ -29,6 +29,7 @@
       <p>Meal Icons color</p>
       <p>Font Family</p>
       <p>Background picture</p>
+      <a href="/shoppinglist">View Shoppinglist</a>
     </div>
     <div class="cp-divbackgroundofplan">
       <div id="cp-backgroundofplan">
@@ -49,16 +50,24 @@
           <tbody>
             <tr>
               <td>Breakfast</td>
+              <td id="mondaybfast">Breakfast <button><a href="/add-meals">Add</a></button></td>
+              <td id="tuesdaybfast">Breakfast <button><a href="/add-meals">Add</a></button></td>
+              <td id="wednesdaybfast">Breakfast <button><a href="/add-meals">Add</a></button></td>
+              <td id="thursdaybfast">Breakfast <button><a href="/add-meals">Add</a></button></td>
+              <td id="fridaybfast">Breakfast <button><a href="/add-meals">Add</a></button></td>
+              <td id="saturdaybfast">Breakfast <button><a href="/add-meals">Add</a></button></td>
+              <td id="sundaybfast">Breakfast <button><a href="/add-meals">Add</a></button></td>
+              {{!-- <td>Breakfast</td>
               {{#each weekArray}}
-              <td>Breakfast<div><button class="cp-addMealsBtns">Add</button>
+              <td>Breakfast<div><button class="cp-addMealsBtns"><a href="/add-meals">Add</a></button>
                 </div>
               </td>
-              {{/each}}
+              {{!-- {{/each}} --}}
             </tr>
             <tr>
               <td>Snack</td>
               {{#each weekArray}}
-              <td>Snack<div><button>Add</button>
+              <td id="{{@index}}bfast">Snack<div><button class="cp-addMealsBtns"><a href="/add-meals">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -66,7 +75,7 @@
             <tr>
               <td>Lunch</td>
               {{#each weekArray}}
-              <td>Lunch<div><button>Add</button>
+              <td>Lunch<div><button class="cp-addMealsBtns"><a href="/add-meals">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -74,7 +83,7 @@
             <tr>
               <td>Snack</td>
               {{#each weekArray}}
-              <td>Snack<div><button>Add</button>
+              <td>Snack<div><button class="cp-addMealsBtns"><a href="/add-meals">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -82,15 +91,17 @@
             <tr>
               <td>Dinner</td>
               {{#each weekArray}}
-              <td>Dinner<div><button>Add</button>
+              <td>Dinner<div><button class="cp-addMealsBtns"><a href="/add-meals">Add</a></button>
                 </div>
               </td>
               {{/each}}
             </tr>
           </tbody>
         </table>
+
+        <p>Hello {{user._plan}}</p>
       </div>
+
     </div>
   </div>
-  <a href="/insert-meals">Start inserting meals</a>
 </div>

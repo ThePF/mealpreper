@@ -34,39 +34,40 @@ body {
   height: 50px;
   background-color: darkslategrey;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .navbar ul {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: right;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .navbar li {
   display: flex;
   justify-content: space-between;
-  margin-left: 40px;
-  text-decoration: none;
+  margin-right: 5vw;
   font-size: 1.2em;
 }
 
-.navbar li :nth-last-child(1) {
-  margin-right: 1220px;
+.navbar #logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 900;
+  text-shadow: 3px 3px #3b3b3b;
 }
 
-/* .navbar #brand-logo {
-    display: flex;
-    text-decoration: none;
-    justify-content: left;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 900;
-    text-shadow: 3px 3px #3b3b3b;
+.navbar #home {
+  text-decoration: none;
 }
- */
+
+.navbar #logout {
+  text-align: right;
+  text-decoration: none;
+}
+
 /* Navbar for signup and login (in Layout) */
 
 a {
@@ -483,6 +484,72 @@ td {
   width: 50px;
   height: 50px;
   border-collapse: 1px solid black;
+}
+
+// add-meals//
+
+.cp-addMealsBtns a {
+  color: black;
+}
+
+.am-add-meals-container {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url('../images/ella-olsson-1184066-unsplash.jpg');
+  background-size: cover;
+  width: inherit;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.am-divAroundForm {
+  width: 1200px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.am-add-mealsForm {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.am-add-mealsForm form {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.am-add-mealsForm input {
+  width: 200px;
+  height: 200px;
+}
+
+.am-add-mealsForm button {
+  width: 50px;
+  height: 20px;
+  margin-top: 30px;
+}
+
+.am-mealsList {
+  width: 300px;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.am-mealsList h4 {
+  color: white;
+  font-size: 2em;
+  margin: 15px;
 }
 
 // .cp-mealField {

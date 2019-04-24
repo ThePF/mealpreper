@@ -1,5 +1,7 @@
 const express = require('express');
 const passport = require('passport');
+const Plan = require('../models/Plan');
+const Meal = require('../models/Meal');
 
 const router = express.Router();
 const User = require('../models/User');

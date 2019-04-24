@@ -1,2 +1,35 @@
-<h2>You have filled in your plan successfully</h2>
+<div class="am-add-meals-container">
+
+  <div class="am-divAroundForm">
+    <div class="am-add-mealsForm">
+
+      <form action="/add-meals" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+        <label for="i0">First ingredient:</label>
+        <input type="text" name="i0">
+        <label for="i1">Second ingredient:</label>
+        <input type="text" name="i1">
+        <label for="i2">Third ingredient:</label>
+        <input type="text" name="i2">
+        <label for="i3">Fourth ingredient:</label>
+        <input type="text" name="i3">
+        <label for="i4">Fifth ingredient:</label>
+        <input type="text" name="i4">
+        <label for="i5">Sixth ingredient:</label>
+        <input type="text" name="i5">
+        <label for="color">Color:</label>
+        <button type="submit">Add</button>
+      </form>
+    </div>
+  </div>
+  <div class="am-mealsList">
+    <h4>Mealslist</h4>
+    <ul>
+      <li>{{Meal.breakfast.name}}</li>
+    </ul>
+  </div>
+</div>
+
+
 <a href="/shoppinglist">Save your plan and proceed to shoppinglist</a>
