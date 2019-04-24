@@ -1,21 +1,21 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    font-size: 100%;
+  font-size: 100%;
 }
 
 /* 768px and smaller */
 @media only screen and (max-width: 768px) {
-    body {
-        font-size: 1rem;
-        background-color: red;
-        overflow-x: scroll;
-    }
+  body {
+    font-size: 1rem;
+    background-color: red;
+    overflow-x: scroll;
+  }
 
-    /*  .buttons {
+  /*  .buttons {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -23,299 +23,7 @@ html {
         align-items: center;
     } */
 
-    .landing-login-btn {
-        font-size: 1.1rem;
-        display: inline-block;
-        width: 6.2rem;
-        padding: 1rem 3rem;
-        color: #fff;
-        border: 2px solid #fff;
-        border-radius: 5px;
-        text-align: center;
-        outline: none;
-        text-decoration: none;
-    }
-
-    .landing-signup-btn {
-        font-size: 1.1rem;
-        display: inline-block;
-        width: 6.2rem;
-        padding: 1rem 3rem;
-        color: #fff;
-        background-color: #08a700;
-        border: 2px solid #08a700;
-        border-radius: 5px;
-        text-align: center;
-        outline: none;
-        text-decoration: none;
-        /* margin-top: 3vh; */
-    }
-}
-
-/* Body section */
-
-body {
-    font-family: "Varela Round", sans-serif;
-    height: 106vh;
-    /* overflow: hidden; */
-}
-
-.login-body {
-    font-size: 0.9rem;
-    background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
-    background-size: cover;
-    width: inherit;
-    height: inherit;
-}
-
-.signup-body {
-    font-size: 0.9rem;
-    background-image: url(https://images.unsplash.com/photo-1540914124281-342587941389?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80);
-    background-size: cover;
-    width: inherit;
-    height: inherit;
-}
-
-.landing-body {
-    font-size: 0.9rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("https://images.unsplash.com/photo-1467453678174-768ec283a940?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1456&q=80");
-    background-size: cover;
-    width: inherit;
-    height: inherit;
-}
-
-/* Navbar for logged in users only (in Layout) */
-
-.navbar {
-    width: 100vw;
-    height: 50px;
-    background-color: rgb(41, 41, 41);
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.navbar ul {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.navbar li {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 5vw;
-    font-size: 1.2rem;
-}
-
-.navbar #logo {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 900;
-    text-shadow: 3px 3px #3b3b3b;
-}
-
-.navbar #home {
-    text-decoration: none;
-}
-
-.navbar #logout {
-    text-align: right;
-    text-decoration: none;
-}
-
-/* Navbar for landing, signup and login page (not in layout) */
-
-a {
-    color: #fff;
-}
-
-a:hover {
-    color: rgb(233, 233, 233);
-}
-
-.brand-logo {
-    display: flex;
-    text-decoration: none;
-    justify-content: left;
-    padding-top: 20px;
-    margin-left: 40px;
-    color: #fff;
-    align-content: center;
-    font-size: 3vw;
-    font-weight: 900;
-    text-shadow: 3px 3px #a5a5a5;
-    width: 70px;
-}
-
-// WELCOME PAGE
-
-.welcome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("/images/lily-banse-365344-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 720px;
-    overflow: hidden;
-}
-
-.welcome-div {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.welcome-h2 {
-    color: white;
-    font-size: 4rem;
-    margin-bottom: 10px;
-    text-align: center;
-    width: 1200px;
-}
-
-.username {
-    color: #0ad800;
-}
-
-.welcome-h3 {
-    color: white;
-    margin-bottom: 90px;
-    font-size: 3rem;
-    width: 1200px;
-    text-align: center;
-}
-
-.welcome-btn {
-    border: none;
-    border-radius: 5px;
-    padding: 1rem 2rem;
-    margin: 0;
-    text-decoration: none;
-    background: #0ad800;
-    color: #ffffff;
-    font-family: "Varela Round", sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    margin-bottom: 15px;
-}
-
-.welcome-btn:hover,
-.welcome-btn:focus {
-    background: #08a700;
-}
-
-.welcome-btn:active {
-    transform: scale(0.99);
-}
-
-// LANDING PAGE
-
-.landing-heading {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50vw;
-    color: #fff;
-    font-size: 2.5em;
-    font-family: "Varela Round", sans-serif;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.15em solid #0ad800; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    margin-bottom: 40px;
-    letter-spacing: 0.1em; /* Adjust as needed */
-    animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 40%;
-    }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: #0ad800;
-    }
-}
-
-.landing-text {
-    font-size: 2em;
-    line-height: 1.5em;
-    color: rgba(255, 255, 255, 0.61);
-    text-align: center;
-    margin-bottom: 50px;
-    -webkit-animation: fadein 7s;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.span-text {
-    color: #fff;
-}
-
-.landing-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6.2rem;
-    margin-right: 5vh;
-    margin-left: 5vh;
-}
-
-.text-wrapper {
-    flex-wrap: wrap;
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
-.buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-// LANDING GHOST BUTTONS
-
-.landing-login-btn {
+  .landing-login-btn {
     font-size: 1.1rem;
     display: inline-block;
     width: 6.2rem;
@@ -326,17 +34,9 @@ a:hover {
     text-align: center;
     outline: none;
     text-decoration: none;
-    margin: 5px;
-    /* margin-right: 3px; */
-}
-.landing-login-btn:hover,
-.landing-login-btn:active {
-    background-color: #fff;
-    color: #000;
-}
+  }
 
-.landing-signup-btn {
-    margin: 5px;
+  .landing-signup-btn {
     font-size: 1.1rem;
     display: inline-block;
     width: 6.2rem;
@@ -348,101 +48,401 @@ a:hover {
     text-align: center;
     outline: none;
     text-decoration: none;
-    /*  margin-left: 3px; */
+    /* margin-top: 3vh; */
+  }
+}
+
+/* Body section */
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  height: 106vh;
+  overflow: hidden;
+}
+
+.login-body {
+  font-size: 0.9rem;
+  background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
+  background-size: cover;
+  width: inherit;
+  height: inherit;
+}
+
+.signup-body {
+  font-size: 0.9rem;
+  background-image: url(https://images.unsplash.com/photo-1540914124281-342587941389?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80);
+  background-size: cover;
+  width: inherit;
+  height: inherit;
+}
+
+.landing-body {
+  font-size: 0.9rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1467453678174-768ec283a940?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1456&q=80');
+  background-size: cover;
+  width: inherit;
+  height: inherit;
+}
+
+/* Navbar for logged in users only (in Layout) */
+
+.navbar {
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(41, 41, 41);
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.navbar li {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5vw;
+  font-size: 1.2rem;
+}
+
+.navbar #logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-shadow: 3px 3px #3b3b3b;
+}
+
+.navbar #home {
+  text-decoration: none;
+}
+
+.navbar #logout {
+  text-align: right;
+  text-decoration: none;
+}
+
+/* Navbar for landing, signup and login page (not in layout) */
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: rgb(233, 233, 233);
+}
+
+.brand-logo {
+  display: flex;
+  text-decoration: none;
+  justify-content: left;
+  padding-top: 20px;
+  margin-left: 40px;
+  color: #fff;
+  align-content: center;
+  font-size: 3vw;
+  font-weight: 900;
+  text-shadow: 3px 3px #a5a5a5;
+  width: 70px;
+}
+
+// WELCOME PAGE
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/lily-banse-365344-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 720px;
+  overflow: hidden;
+}
+
+.welcome-div {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-h2 {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 1200px;
+}
+
+.username {
+  color: #0ad800;
+}
+
+.welcome-h3 {
+  color: white;
+  margin-bottom: 90px;
+  font-size: 3rem;
+  width: 1200px;
+  text-align: center;
+}
+
+.welcome-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #0ad800;
+  color: #ffffff;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-bottom: 15px;
+}
+
+.welcome-btn:hover,
+.welcome-btn:focus {
+  background: #08a700;
+}
+
+.welcome-btn:active {
+  transform: scale(0.99);
+}
+
+// LANDING PAGE
+
+.landing-heading {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+  color: #fff;
+  font-size: 2.5em;
+  font-family: 'Varela Round', sans-serif;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #0ad800; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  margin-bottom: 40px;
+  letter-spacing: 0.1em; /* Adjust as needed */
+  animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #0ad800;
+  }
+}
+
+.landing-text {
+  font-size: 2em;
+  line-height: 1.5em;
+  color: rgba(255, 255, 255, 0.61);
+  text-align: center;
+  margin-bottom: 50px;
+  -webkit-animation: fadein 7s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.span-text {
+  color: #fff;
+}
+
+.landing-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6.2rem;
+  margin-right: 5vh;
+  margin-left: 5vh;
+}
+
+.text-wrapper {
+  flex-wrap: wrap;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+// LANDING GHOST BUTTONS
+
+.landing-login-btn {
+  font-size: 1.1rem;
+  display: inline-block;
+  width: 6.2rem;
+  padding: 1rem 3rem;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  margin: 5px;
+  /* margin-right: 3px; */
+}
+.landing-login-btn:hover,
+.landing-login-btn:active {
+  background-color: #fff;
+  color: #000;
+}
+
+.landing-signup-btn {
+  margin: 5px;
+  font-size: 1.1rem;
+  display: inline-block;
+  width: 6.2rem;
+  padding: 1rem 3rem;
+  color: #fff;
+  background-color: #08a700;
+  border: 2px solid #08a700;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  /*  margin-left: 3px; */
 }
 .landing-signup-btn:hover,
 .landing-signup-btn:active {
-    background-color: #08a70000;
-    color: #08a700;
+  background-color: #08a70000;
+  color: #08a700;
 }
 
 // LOGIN and SIGNUP PAGE
 
 .section-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
 }
 
 .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(43, 43, 43, 0.7);
-    width: 50%;
-    margin-top: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    border-radius: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(43, 43, 43, 0.7);
+  width: 50%;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  border-radius: 1.8rem;
 }
 
 .signup-heading {
-    color: #fff;
-    border-bottom: solid #eb8100;
-    font-size: 2.5rem;
-    padding-bottom: 3px;
-    margin-bottom: 2.5rem;
+  color: #fff;
+  border-bottom: solid #eb8100;
+  font-size: 2.5rem;
+  padding-bottom: 3px;
+  margin-bottom: 2.5rem;
 }
 
 .login-heading {
-    color: #fff;
-    border-bottom: solid #0069ed;
-    font-size: 2.5rem;
-    padding-bottom: 3px;
-    margin-bottom: 2.5rem;
+  color: #fff;
+  border-bottom: solid #0069ed;
+  font-size: 2.5rem;
+  padding-bottom: 3px;
+  margin-bottom: 2.5rem;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
 }
 
 #username,
 #password {
-    width: 50%;
-    height: 1.9rem;
-    border-radius: 5px;
-    display: block;
+  width: 50%;
+  height: 1.9rem;
+  border-radius: 5px;
+  display: block;
 }
 
 .account-message {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 span {
-    color: #fff;
+  color: #fff;
 }
 
 // LOGIN AND SIGNUP BUTTONS
 
 .login-btn {
-    border: none;
-    border-radius: 5px;
-    padding: 1rem 3rem;
-    margin-right: 3px;
-    text-decoration: none;
-    background: #0069ed;
-    color: #ffffff;
-    font-family: "Varela Round", sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+  margin-right: 3px;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-bottom: 1rem;
 }
 
 .login-btn:hover,
 .login-btn:focus {
-    background: #0053ba;
+  background: #0053ba;
 }
 
 /* .login-btn:focus {
@@ -451,242 +451,251 @@ span {
 } */
 
 .login-btn:active {
-    transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 .signup-btn {
-    border: none;
-    border-radius: 5px;
-    padding: 1rem 2.5rem;
-    margin-left: 3px;
-    text-decoration: none;
-    background: #ff8c00;
-    color: #ffffff;
-    font-family: "Varela Round", sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2.5rem;
+  margin-left: 3px;
+  text-decoration: none;
+  background: #ff8c00;
+  color: #ffffff;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-bottom: 1rem;
 }
 
 .signup-btn:hover,
 .signup-btn:focus {
-    background: #eb8100;
+  background: #eb8100;
 }
 
 .signup-btn:active {
-    transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 /*create-plan*/
 
 #create-plan-container {
-    width: inherit;
-    height: inherit;
-    background: linear-gradient(90deg, rgba(1, 0, 19, 1) 0%, rgba(88, 97, 122, 1) 64%, rgba(255, 255, 255, 1) 100%);
+  width: inherit;
+  height: inherit;
+  background-image: url('https://images.unsplash.com/photo-1543353071-873f17a7a088?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+//   background: linear-gradient(
+//     90deg,
+//     rgba(1, 0, 19, 1) 0%,
+//     rgba(88, 97, 122, 1) 64%,
+//     rgba(255, 255, 255, 1) 100%
+//   );
+
 .cp-heading-wrapper {
-    color: #fff;
-    margin: 0 20px 20px;
-    padding-top: 20px;
+  color: #fff;
+  margin: 0 20px 20px;
+  padding-top: 20px;
 }
 
 .cp-divbackgroundofcp {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* Customize */
 
 .cp-customizeTable {
-    width: 300px;
-    height: inherit;
-    background-color: rgba(211, 211, 211, 0.322);
-    margin-left: 10px;
-    border-radius: 20px;
+  width: 300px;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 10px;
+  border-radius: 20px;
 }
 
 .cp-customizebackgroundcolor {
-    width: inherit;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
+  width: inherit;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 #cp-backgroundcolors {
-    width: inherit;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10px;
+  width: inherit;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
 #cp-bgcolor1 {
-    width: 15px;
-    height: 15px;
-    background-color: lightblue;
+  width: 15px;
+  height: 15px;
+  background-color: lightblue;
 }
 
 #cp-bgcolor2 {
-    width: 15px;
-    height: 15px;
-    background-color: lightcyan;
+  width: 15px;
+  height: 15px;
+  background-color: lightcyan;
 }
 
 #cp-bgcolor3 {
-    width: 15px;
-    height: 15px;
-    background-color: lightseagreen;
+  width: 15px;
+  height: 15px;
+  background-color: lightseagreen;
 }
 
 #cp-bgcolor4 {
-    width: 15px;
-    height: 15px;
-    background-color: darkgoldenrod;
+  width: 15px;
+  height: 15px;
+  background-color: darkgoldenrod;
 }
 
 #cp-bgcolor5 {
-    width: 15px;
-    height: 15px;
-    background-color: darkmagenta;
+  width: 15px;
+  height: 15px;
+  background-color: darkmagenta;
 }
 
 #cp-bgcolor6 {
-    width: 15px;
-    height: 15px;
-    background-color: darkolivegreen;
+  width: 15px;
+  height: 15px;
+  background-color: darkolivegreen;
 }
 
 .cp-customizeweekdaycolor {
-    width: inherit;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+  width: inherit;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 #cp-weekdaycolor {
-    width: inherit;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10px;
+  width: inherit;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
 #cp-wdcolor1 {
-    width: 15px;
-    height: 15px;
-    background-color: lightblue;
+  width: 15px;
+  height: 15px;
+  background-color: lightblue;
 }
 
 #cp-wdcolor2 {
-    width: 15px;
-    height: 15px;
-    background-color: lightcyan;
+  width: 15px;
+  height: 15px;
+  background-color: lightcyan;
 }
 
 #cp-wdcolor3 {
-    width: 15px;
-    height: 15px;
-    background-color: lightseagreen;
+  width: 15px;
+  height: 15px;
+  background-color: lightseagreen;
 }
 
 #cp-wdcolor4 {
-    width: 15px;
-    height: 15px;
-    background-color: darkgoldenrod;
+  width: 15px;
+  height: 15px;
+  background-color: darkgoldenrod;
 }
 
 #cp-wdcolor5 {
-    width: 15px;
-    height: 15px;
-    background-color: darkmagenta;
+  width: 15px;
+  height: 15px;
+  background-color: darkmagenta;
 }
 
 #cp-wdcolor6 {
-    width: 15px;
-    height: 15px;
-    background-color: darkolivegreen;
+  width: 15px;
+  height: 15px;
+  background-color: darkolivegreen;
 }
 
 p {
-    color: #fff;
-    margin-left: 20px;
-    margin-bottom: 10px;
+  color: #fff;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .style-plan {
-    margin-top: 30px;
-    margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .shoppinglist {
-    border: none;
-    border-radius: 5px;
-    padding: 1rem;
-    text-decoration: none;
-    background: #ff8c00;
-    color: #ffffff;
-    font-family: "Varela Round", sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    margin-left: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  text-decoration: none;
+  background: #ff8c00;
+  color: #ffffff;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-left: 20px;
 }
 
 .shoppinglist:hover,
 .signup-btn:focus {
-    background: #eb8100;
+  background: #eb8100;
 }
 
 .shoppinglist:active {
-    transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 //plan styling//
 
 .cp-divbackgroundofplan {
-    width: 1200px;
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 1200px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #cp-backgroundofplan {
-    width: 950px;
-    height: 550px;
-    background-color: #08a700;
-    /* background-image: url(https://images.unsplash.com/photo-1527324546834-40c5d61f140f?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
+  width: 950px;
+  height: 550px;
+  background-color: lightsalmon;
+  /* background-image: url(https://images.unsplash.com/photo-1527324546834-40c5d61f140f?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
     background-size: cover; */
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 table {
-    border: 3px solid black;
-    width: inherit;
-    height: inherit;
-    border-radius: 20px;
+  border: 3px solid black;
+  width: inherit;
+  height: inherit;
+  border-radius: 20px;
 }
 
 //Columns -weekdays//
 th {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 
 //Reihen meals//
 td {
-    border: 1px solid black;
-    width: 100px;
-    height: 50px;
+  border: 1px solid black;
+  width: 100px;
+  height: 50px;
 }
 
 .cp-tablebody a {
@@ -699,18 +708,18 @@ td {
 }
 
 #cp-plan  {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .cp-weekday {
-    background-color: blue;
-    border-radius: 10px;
+  background-color: blue;
+  border-radius: 10px;
 }
 
 .cp-weekdays {
-    width: 50px;
-    height: 50px;
-    /* border-collapse: 1px solid black; */
+  width: 50px;
+  height: 50px;
+  /* border-collapse: 1px solid black; */
 }
 
 // add-meals//
@@ -724,56 +733,56 @@ td {
 } */
 
 .cp-addMealsBtns a {
-    color: black;
+  color: black;
 }
 
 .am-add-meals-container {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-        url("../images/ella-olsson-1184066-unsplash.jpg");
-    background-size: cover;
-    width: inherit;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url('../images/ella-olsson-1184066-unsplash.jpg');
+  background-size: cover;
+  width: inherit;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .am-divAroundForm {
-    width: 1200px;
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 1200px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .am-add-mealsForm {
-    width: 500px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    flex-direction: column;
-    border-radius: 20px;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  border-radius: 20px;
 }
 
 .am-add-mealsForm form {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 90px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 90px;
 }
 
 .am-add-mealsForm label {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .am-add-mealsForm input {
-    width: 80%;
-    margin-bottom: 15px;
-    border-radius: 5px;
+  width: 80%;
+  margin-bottom: 15px;
+  border-radius: 5px;
 }
 
 /* .am-add-mealsForm button {
@@ -785,44 +794,48 @@ td {
 //
 
 .am-add-mealsForm button {
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    padding: 0.5em;
-    width: 5em;
-    text-decoration: none;
-    background: #0ad800;
-    color: #ffffff;
-    font-family: "Varela Round", sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 0.5em;
+  width: 5em;
+  text-decoration: none;
+  background: #0ad800;
+  color: #ffffff;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-bottom: 15px;
 }
 
 .am-add-mealsForm button:hover {
-    background: #08a700;
+  background: #08a700;
 }
 
 .am-add-mealsForm button:active {
-    transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 //
 
 .am-mealsList {
-    width: 300px;
-    height: inherit;
-    background-color: rgba(0, 0, 0, 0.8);
+  width: 300px;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .am-mealsList h4 {
-    color: white;
-    font-size: 2em;
-    margin: 15px;
+  color: white;
+  font-size: 2em;
+  margin: 15px;
+}
+
+.breakfastList {
+  color: black;
 }
 
 // .cp-mealField {
@@ -838,5 +851,21 @@ td {
 //   width: inherit;
 //   height: inherit;
 // }
+
+//shoppinglist//
+
+.sl-shoppinglist-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sl-innerDiv {
+  width: 400px;
+  height: 500px;
+  background-color: grey;
+}
 
 /*# sourceMappingURL=style.css.map */

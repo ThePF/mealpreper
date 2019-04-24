@@ -26,8 +26,9 @@
   <div class="am-mealsList">
     <h4>Mealslist</h4>
     <ul>
-      {{#each weekarray}}
-      <li>{{#with (lookup ../plan @index)}}
+      {{#each weekArray}}
+      <li>
+        {{#with (lookup ../plan @index)}}
         {{breakfast.name}}
         {{/with}}
       </li>

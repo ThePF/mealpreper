@@ -50,7 +50,7 @@ wdcolor6 = document.getElementById('cp-wdcolor6');
 
 const wdcurrentColor = document.getElementsByClassName('cp-weekday');
 
-wdcolor1.addEventListener('click', function() {
+wdcolor1.addEventListener(onclick, function() {
   console.log('yes');
   const value = window.getComputedStyle(wdcolor1).getPropertyValue('background-color');
   wdcurrentColor.style.backgroundColor = value;
