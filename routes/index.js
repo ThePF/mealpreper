@@ -30,22 +30,22 @@ router.get('/welcome', authenticationCheck, (req, res, next) => {
   res.render('userarea/welcome', { username: req.user.username });
 });
 
-// router.get('/create-plan', authenticationCheck, (req, res, next) => {
-//   let id = req.user._id;
-//   console.log(id);
-//   User.find({ _id: id }).then(userId => {
-//     console.log('Userid should be t', userId);
-//     Plan.find({ _plan: userId.plan }).then(planId => {
-//       console.log('plan:', planId);
-//       Meal.find({ _plan: planId.plan }).then(mealId => {
-//         console.log('plan:', mealId);
-//       });
-//     });
-//   });
-//   console.log(req.user);
-//   let weekArray = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-//   res.render('userarea/create-plan', { weekArray });
-// });
+router.get('/create-plan', authenticationCheck, (req, res, next) => {
+  let id = req.user._id;
+  console.log(id);
+  User.find({ _id: id }).then(userId => {
+    console.log('Userid should be t', userId);
+    Plan.find({ _plan: userId.plan }).then(planId => {
+      console.log('plan:', planId);
+      Meal.find({ _plan: planId.plan }).then(mealId => {
+        console.log('plan:', mealId);
+      });
+    });
+  });
+  console.log(req.user);
+  let weekArray = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  res.render('userarea/create-plan', { weekArray });
+});
 
 router.get('/create-plan', authenticationCheck, (req, res, next) => {
   let id = req.user._id;
