@@ -18,17 +18,7 @@ const planSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Meal'
       },
-      lunch: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      },
-      dinner: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      }
-    },
-    {
-      breakfast: {
+      morningsnack: {
         type: Schema.Types.ObjectId,
         ref: 'Meal'
       },
@@ -36,73 +26,7 @@ const planSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Meal'
       },
-      dinner: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      }
-    },
-    {
-      breakfast: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      },
-      lunch: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      },
-      dinner: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      }
-    },
-    {
-      breakfast: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      },
-      lunch: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      },
-      dinner: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      }
-    },
-    {
-      breakfast: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      },
-      lunch: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      },
-      dinner: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      }
-    },
-    {
-      breakfast: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      },
-      lunch: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      },
-      dinner: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      }
-    },
-    {
-      breakfast: {
-        type: Schema.Types.ObjectId,
-        ref: 'Meal'
-      },
-      lunch: {
+      afternoonsnack: {
         type: Schema.Types.ObjectId,
         ref: 'Meal'
       },

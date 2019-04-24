@@ -677,14 +677,25 @@ table {
     border-radius: 20px;
 }
 
+//Columns -weekdays//
 th {
     border: 2px solid black;
 }
 
+//Reihen meals//
 td {
     border: 1px solid black;
     width: 100px;
     height: 50px;
+}
+
+.cp-tablebody a {
+  color: black;
+}
+
+.cp-tablebody button {
+  width: 20px;
+  height: 10px;
 }
 
 #cp-plan  {

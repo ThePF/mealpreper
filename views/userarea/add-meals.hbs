@@ -2,8 +2,8 @@
 
   <div class="am-divAroundForm">
     <div class="am-add-mealsForm">
-
-      <form class="add-meal-form" action="/add-meals" method="POST">
+      <h2>Day Meal</h2>
+      <form action="/add-meals/{{day}}/{{meal}}" method="POST">
         <label for="name">Name:</label>
         <input type="text" name="name" id="meal-name">
         <label for="i0">First ingredient:</label>
@@ -26,7 +26,12 @@
   <div class="am-mealsList">
     <h4>Mealslist</h4>
     <ul>
-      <li>{{Meal.breakfast.name}}</li>
+      {{#each weekarray}}
+      <li>{{#with (lookup ../plan @index)}}
+        {{breakfast.name}}
+        {{/with}}
+      </li>
+      {{/each}}
     </ul>
   </div>
 </div>
