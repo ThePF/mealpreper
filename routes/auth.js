@@ -44,8 +44,7 @@ router.get('/signup', (req, res, next) => {
 router.post('/signup', (req, res, next) => {
   const username = req.body.username;
   const password = req.body.password;
-  const _plan = req.body._plan;
-  console.log('test');
+
   if (username === '' || password === '') {
     res.render('auth/signup', { message: 'Indicate username and password' });
     return;
@@ -63,35 +62,25 @@ router.post('/signup', (req, res, next) => {
     const newUser = new User({
       username,
       password: hashPass
-      // _plan: '0'
     });
-
-    // const newPlan = new Plan({
-    //   fromDate,
-    //   toDate,
-    //   weekdays
-    // });
-
-    // const newMeal = new Meal({
-    //   name,
-    //   ingredients,
-    //   color,
-    //   calories
-    // });
 
     newUser
       .save()
       .then(user => {
         Plan.create({
           _owner: user._id
-        }).then(() => {
-          Meal.create().then(() => {
+        })
+          .then(plan => {
             req.logIn(newUser, () => {
               res.redirect('/welcome');
             });
+          })
+
+          .catch(err => {
+            console.log('error creating the plan');
           });
-        });
       })
+
       .catch(err => {
         res.render('auth/signup', { message: 'Something went wrong' });
       });

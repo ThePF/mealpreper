@@ -47,12 +47,12 @@
               <th class="cp-weekday">Sunday</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="cp-tablebody">
             <tr>
               <td>Breakfast</td>
 
               {{#each weekArray}}
-              <td>Breakfast<div><button id="{{@index}}bfast"><a href="/add-meals">Add</a></button>
+              <td>Breakfast<div><button id="{{@index}}bfast"><a href="/add-meals/{{@index}}/bfast">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -60,7 +60,7 @@
             <tr>
               <td>Snack</td>
               {{#each weekArray}}
-              <td>Snack<div><button id="{{@index}}msnack"><a href="/add-meals">Add</a></button>
+              <td>Snack<div><button id="{{@index}}msnack"><a href="/add-meals/{{@index}}/msnack">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -68,7 +68,7 @@
             <tr>
               <td>Lunch</td>
               {{#each weekArray}}
-              <td>Lunch<div><button class="cp-addMealsBtns"><a href="/add-meals">Add</a></button>
+              <td>Lunch<div><button id="{{@index}}lunch"><a href="/add-meals/{{@index}}/lunch">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -76,7 +76,7 @@
             <tr>
               <td>Snack</td>
               {{#each weekArray}}
-              <td>Snack<div><button class="cp-addMealsBtns"><a href="/add-meals">Add</a></button>
+              <td>Snack<div><button id="{{@index}}lsnack"><a href="/add-meals/{{@index}}/lsnack">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -84,7 +84,7 @@
             <tr>
               <td>Dinner</td>
               {{#each weekArray}}
-              <td>Dinner<div><button class="cp-addMealsBtns"><a href="/add-meals">Add</a></button>
+              <td>Dinner<div><button id="{{@index}}dinner"><a href="/add-meals/{{@index}}/dinner">Add</a></button>
                 </div>
               </td>
               {{/each}}

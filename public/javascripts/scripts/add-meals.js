@@ -1,15 +1,13 @@
-//add meals buttons//
-// console.log('hello');
-// const addMealsBtns = document.getElementsByClassName('cp-addMealsBtns');
-// const cpBody = document.getElementById('create-plan-container');
+// Eventlistener for add-meals//
 
-// /* addMealsBtns.addEventListener('click', function() {
-//   console.log('working');
-//   cpBody.style.backgroundColor = 'grey';
-// }); */
+for (let i = 0; i <= 6; i++) {
+  const currentButton = document.getElementById(i + 'bfast');
+  console.log(currentButton);
+  currentButton.onclick = () => {
+    // i = day of the Week
+    // breakfast
 
-// const myAmazingFunction = () => {
-//   console.log('WorkinG:D');
-//   cpBody.style.backgroundColor = 'grey';
-//   // cpBody.style.zIndex = 99;
-// };
+    // weekdays[i].breakfast._id
+    console.log(i);
+  };
+}

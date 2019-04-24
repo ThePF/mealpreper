@@ -586,12 +586,23 @@ table {
   height: inherit;
 }
 
+//Columns -weekdays//
 th {
   border: 2px solid black;
 }
 
+//Reihen meals//
 td {
   border-bottom: 1px solid black;
+}
+
+.cp-tablebody a {
+  color: black;
+}
+
+.cp-tablebody button {
+  width: 20px;
+  height: 10px;
 }
 
 #cp-plan  {
