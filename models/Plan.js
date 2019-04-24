@@ -18,7 +18,15 @@ const planSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Meal'
       },
+      morningsnack: {
+        type: Schema.Types.ObjectId,
+        ref: 'Meal'
+      },
       lunch: {
+        type: Schema.Types.ObjectId,
+        ref: 'Meal'
+      },
+      afternoonsnack: {
         type: Schema.Types.ObjectId,
         ref: 'Meal'
       },

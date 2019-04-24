@@ -83,7 +83,13 @@ router.post('/add-meals/:dayIndex/:meal', (req, res) => {
           console.log('here is a new meal', plan);
           res.redirect('/create-plan');
         });
+      } else if (req.params.meal === 'msnack') {
+        Plan.findOneAndUpdate(_owner, { 'weekdays[index].snack': meal }).then(plan => {
+          console.log('here is a new meal', plan);
+          res.redirect('/create-plan');
+        });
       }
+
       console.log('Meal successfully created');
     })
     .catch(err => {
