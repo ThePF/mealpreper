@@ -1,0 +1,23 @@
+<div class="view-schedule-container">
+  <div class="vs-innerDiv">
+    <h1>This is your schedule for the day</h1>
+    <div class="vs-viewschedule">
+      <h1>{{dayview}}</h1>
+      <div class="vs-divoflists"></div>
+      <div class="breakfastlist">
+        <h3>Breakfast</h3>
+        <p>{{breakfast.name}}</p>
+        <ul>
+          {{#each ingredients}}
+          <li>
+            {{#with (lookup ../plan @index)}}
+            {{breakfast.ingredients}}
+            {{/with}}
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>

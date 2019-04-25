@@ -1,13 +1,14 @@
 <div class="sl-shoppinglist-container">
   <h2>This is your shoppinglist</h2>
   <div class="sl-innerDiv">
+
     <ul>
       {{#each weekArray}}
-      <li>
-        {{#with (lookup ../plan @index)}}
-        {{breakfast.ingredients}}
-        {{/with}}
-      </li>
+
+      {{#with (lookup ../plan @index)}}
+      <li>{{breakfast.ingredients}}</li>
+      {{/with}}
+
       {{/each}}
     </ul>
   </div>
