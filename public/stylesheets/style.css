@@ -76,18 +76,17 @@ body {
   height: 50px;
   background-color: #292929;
   display: flex;
-  flex-direction: row-reverse; }
+  flex-direction: row;
+  justify-content: center; }
 
 .navbar ul {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  justify-content: flex-end; }
+  flex-direction: row; }
 
 .navbar li {
   display: flex;
-  justify-content: space-between;
-  margin-right: 5vw;
+  margin: 40vw;
   font-size: 1.2rem; }
 
 .navbar #logo {
@@ -97,11 +96,7 @@ body {
   font-weight: 900;
   text-shadow: 3px 3px #3b3b3b; }
 
-.navbar #home {
-  text-decoration: none; }
-
 .navbar #logout {
-  text-align: right;
   text-decoration: none; }
 
 /* Navbar for landing, signup and login page (not in layout) */
