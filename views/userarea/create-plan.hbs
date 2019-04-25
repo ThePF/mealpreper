@@ -62,67 +62,69 @@
               <td class="breakfast">Breakfast</td>
               {{#each weekArray}}
               <td>
-                <div id="{{@index}}mealicon">
-                  {{#with (lookup ../plan @index)}}
-                  {{breakfast.name}}
-                  {{/with}}
-                  <button id="{{@index}}Breakfast"><a href="/add-meals/{{@index}}/Breakfast">Add</a></button>
+                <div class="mealicon">
+                  <div id="{{@index}}">
+                    {{#with (lookup ../plan @index)}}
+                    {{breakfast.name}}
+                    {{/with}}</div>
                 </div>
-              </td>
-              {{/each}}
-            </tr>
-            <tr>
-              <td class="snack">Snack</td>
-              {{#each weekArray}}
-              <td>
-                {{#with (lookup ../plan @index)}}
-                <p>{{morningsnack.name}}</p>
-                {{/with}}
-                <div><button id="{{@index}}Morningsnack"><a href="/add-meals/{{@index}}/Morningsnack">Add</a></button>
-                </div>
-              </td>
-              {{/each}}
-            </tr>
-            <tr>
-              <td class="lunch">Lunch</td>
-              {{#each weekArray}}
-              <td>{{#with (lookup ../plan @index)}}
-                <p>{{lunch.name}}</p>
-                {{/with}}
-                <div><button id="{{@index}}Lunch"><a href="/add-meals/{{@index}}/Lunch">Add</a></button>
-                </div>
-              </td>
-              {{/each}}
-            </tr>
-            <tr>
-              <td class="snack">Snack</td>
-              {{#each weekArray}}
-              <td>{{#with (lookup ../plan @index)}}
-                <p>{{afternoonsnack.name}}</p>
-                {{/with}}
-                <div><button id="{{@index}}Afternoonsnack"><a
-                      href="/add-meals/{{@index}}/Afternoonsnack">Add</a></button>
-                </div>
-              </td>
-              {{/each}}
-            </tr>
-            <tr>
-              <td class="dinner">Dinner</td>
-              {{#each weekArray}}
-              <td>{{#with (lookup ../plan @index)}}
-                <p>{{dinner.name}}</p>
-                {{/with}}
-                <div><button id="{{@index}}Dinner"><a href="/add-meals/{{@index}}/Dinner">Add</a></button>
-                </div>
-              </td>
-              {{/each}}
-            </tr>
-          </tbody>
-        </table>
+                <button id="{{@index}}Breakfast"><a href="/add-meals/{{@index}}/Breakfast">Add</a></button>
 
-        <p>Hello {{user._plan}}</p>
       </div>
+      </td>
+      {{/each}}
+      </tr>
+      <tr>
+        <td class="snack">Snack</td>
+        {{#each weekArray}}
+        <td>
+          {{#with (lookup ../plan @index)}}
+          <p>{{morningsnack.name}}</p>
+          {{/with}}
+          <div><button id="{{@index}}Morningsnack"><a href="/add-meals/{{@index}}/Morningsnack">Add</a></button>
+          </div>
+        </td>
+        {{/each}}
+      </tr>
+      <tr>
+        <td class="lunch">Lunch</td>
+        {{#each weekArray}}
+        <td>{{#with (lookup ../plan @index)}}
+          <p>{{lunch.name}}</p>
+          {{/with}}
+          <div><button id="{{@index}}Lunch"><a href="/add-meals/{{@index}}/Lunch">Add</a></button>
+          </div>
+        </td>
+        {{/each}}
+      </tr>
+      <tr>
+        <td class="snack">Snack</td>
+        {{#each weekArray}}
+        <td>{{#with (lookup ../plan @index)}}
+          <p>{{afternoonsnack.name}}</p>
+          {{/with}}
+          <div><button id="{{@index}}Afternoonsnack"><a href="/add-meals/{{@index}}/Afternoonsnack">Add</a></button>
+          </div>
+        </td>
+        {{/each}}
+      </tr>
+      <tr>
+        <td class="dinner">Dinner</td>
+        {{#each weekArray}}
+        <td>{{#with (lookup ../plan @index)}}
+          <p>{{dinner.name}}</p>
+          {{/with}}
+          <div><button id="{{@index}}Dinner"><a href="/add-meals/{{@index}}/Dinner">Add</a></button>
+          </div>
+        </td>
+        {{/each}}
+      </tr>
+      </tbody>
+      </table>
 
+      <p>Hello {{user._plan}}</p>
     </div>
+
   </div>
+</div>
 </div>
