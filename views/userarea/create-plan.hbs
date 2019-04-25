@@ -61,12 +61,20 @@
             <tr>
               <td class="breakfast">Breakfast</td>
               {{#each weekArray}}
-              <td>
-                <div class="mealicon">
-                  <div id="{{@index}}">
-                    {{#with (lookup ../plan @index)}}
-                    {{breakfast.name}}
-                    {{/with}}</div>
+              {{!-- <div class="mealicon"> --}}
+              {{breakfast.color}}
+
+              <td style="background-color:
+                  {{#with (lookup ../plan @index)}}
+              {{breakfast.color}}
+                  {{/with}}
+
+              ">
+                <div id=" {{@index}}divbreakfast">
+                  {{#with (lookup ../plan @index)}}
+                  {{breakfast.name}}
+                  {{!-- </div> --}}
+                  {{/with}}
                 </div>
                 <button id="{{@index}}Breakfast"><a href="/add-meals/{{@index}}/Breakfast">Add</a></button>
 

@@ -767,6 +767,7 @@ th {
 //Reihen meals//
 
 td {
+    padding: 0 !important;
     font-weight: 900;
     text-align: center;
     border: 1px solid black;
@@ -791,21 +792,27 @@ td {
 .dinner {
     background-color: #fff;
 }
+
+/* .mealicon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    height: 5vh;
+} */
+
 .cp-tablebody a {
     text-decoration: none;
-    font-family: "Varela Round", sans-serif;
-    background-color: #0069ed;
-    color: #fff;
-    margin-top: 330px;
-    padding: 4px 4px;
-    font-size: 15px;
-    border-radius: 5px;
 }
 
 .cp-tablebody button {
-    /* width: 40px;
-    height: 25px; */
-    /* margin-top: 30px; */
+    font-family: "Varela Round", sans-serif;
+    background-color: #0069ed;
+    color: #fff;
+    padding: 4px 4px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 0;
+    width: 40px;
 }
 
 .cp-tablebody p {
@@ -838,9 +845,6 @@ td {
     background-color: #0ad800;
     padding: 4px 4px;
 } */
-.cp-addMealsBtns a {
-    color: black;
-}
 
 .am-add-meals-container {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
