@@ -53,7 +53,7 @@
           </thead>
           <tbody class="cp-tablebody">
             <tr>
-              <td>Breakfast</td>
+              <td class="breakfast">Breakfast</td>
               {{#each weekArray}}
               <td>
                 <div id="{{@index}}mealicon">
@@ -66,7 +66,7 @@
               {{/each}}
             </tr>
             <tr>
-              <td>Snack</td>
+              <td class="snack">Snack</td>
               {{#each weekArray}}
               <td>
                 {{#with (lookup ../plan @index)}}
@@ -78,7 +78,7 @@
               {{/each}}
             </tr>
             <tr>
-              <td>Lunch</td>
+              <td class="lunch">Lunch</td>
               {{#each weekArray}}
               <td>{{#with (lookup ../plan @index)}}
                 {{lunch.name}}
@@ -89,7 +89,7 @@
               {{/each}}
             </tr>
             <tr>
-              <td>Snack</td>
+              <td class="snack">Snack</td>
               {{#each weekArray}}
               <td>{{#with (lookup ../plan @index)}}
                 {{afternoonsnack.name}}
@@ -101,7 +101,7 @@
               {{/each}}
             </tr>
             <tr>
-              <td>Dinner</td>
+              <td class="dinner">Dinner</td>
               {{#each weekArray}}
               <td>{{#with (lookup ../plan @index)}}
                 {{dinner.name}}
