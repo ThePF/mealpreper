@@ -85,6 +85,32 @@ router.post('/copy/:breakfastId/:day/:meal', (req, res) => {
       res.redirect('/create-plan');
     }
   );
+
+  Plan.findOneAndUpdate({ _owner: req.user._id }, { [queryMsnack]: _copiedMeal }, { new: true }).then(
+    plan => {
+      res.redirect('/create-plan');
+    }
+  );
+
+  Plan.findOneAndUpdate({ _owner: req.user._id }, { [queryLunch]: _copiedMeal }, { new: true }).then(
+    plan => {
+      res.redirect('/create-plan');
+    }
+  );
+
+  Plan.findOneAndUpdate(
+    { _owner: req.user._id },
+    { [queryAfternoonsnack]: _copiedMeal },
+    { new: true }
+  ).then(plan => {
+    res.redirect('/create-plan');
+  });
+
+  Plan.findOneAndUpdate({ _owner: req.user._id }, { [queryDinner]: _copiedMeal }, { new: true }).then(
+    plan => {
+      res.redirect('/create-plan');
+    }
+  );
 });
 
 router.post('/add-meals/:dayIndex/:meal', (req, res) => {

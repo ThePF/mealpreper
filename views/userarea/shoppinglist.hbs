@@ -3,6 +3,47 @@
   <div class="shopping-list-wrapper">
     <div class="shopping-list">
       <ul>
+        <h3>Breakfast</h3>
+        {{#each weekArray}}
+
+        {{#with (lookup ../plan @index)}}
+        <li>{{breakfast.ingredients}}</li>
+        {{/with}}
+
+        {{/each}}
+      </ul>
+      <ul>
+        <h3>Morningsnack</h3>
+        {{#each weekArray}}
+
+        {{#with (lookup ../plan @index)}}
+        <li>{{breakfast.ingredients}}</li>
+        {{/with}}
+
+        {{/each}}
+      </ul>
+      <ul>
+        <h3>Lunch</h3>
+        {{#each weekArray}}
+
+        {{#with (lookup ../plan @index)}}
+        <li>{{breakfast.ingredients}}</li>
+        {{/with}}
+
+        {{/each}}
+      </ul>
+      <ul>
+        <h3>Afternoonsnack</h3>
+        {{#each weekArray}}
+
+        {{#with (lookup ../plan @index)}}
+        <li>{{breakfast.ingredients}}</li>
+        {{/with}}
+
+        {{/each}}
+      </ul>
+      <ul>
+        <h3>Dinner</h3>
         {{#each weekArray}}
 
         {{#with (lookup ../plan @index)}}

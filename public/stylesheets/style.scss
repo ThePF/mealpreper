@@ -947,8 +947,29 @@ td {
   margin: 15px;
 }
 
-.breakfastList {
-  color: black;
+.am-singlemealslists {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 300px;
+  height: 200px;
+}
+
+.am-singlemealslists p {
+  font-size: 0.8em;
+}
+
+.am-singlemealslists h3 {
+  font-size: 1em;
+}
+
+// .wraplists ul {
+//   display: flex;
+//   flex-direction: row;
+// }
+
+.am-singlemealslists li {
+  list-style-type: none;
 }
 
 // shopping list
@@ -997,9 +1018,26 @@ td {
 
 .shopping-list {
   width: 55%;
-  margin-left: 45px;
+  margin-left: 100px;
+
   height: 500px;
   background-color: rgba(255, 255, 255, 0.041);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopping-list ul {
+  margin-bottom: 20px;
+}
+
+.shopping-list li {
+  font-size: 0.8em;
+  list-style-type: none;
+}
+.shopping-list h3 {
+  border-bottom: 1px solid black;
 }
 
 .sl-h2 {
