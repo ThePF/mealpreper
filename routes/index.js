@@ -12,13 +12,9 @@ app.locals.weekday = "Monday"
 //   res.render('auth/login');
 // });
 
-//CODE BELOW ADDED BY LUKAS TUESDAY MORNING
-
 router.get("/", (req, res, next) => {
     res.render("index", { layout: false })
 })
-
-// ------ UNTIL HERE ----------------
 
 const authenticationCheck = (req, res, next) => {
     if (req.isAuthenticated()) next()
@@ -72,67 +68,67 @@ router.post("/add-meals/:dayIndex/:meal", (req, res) => {
     let ingredients = [i0, i1, i2, i3, i4, i5]
     let _owner = req.user._id
     let index = req.params.dayIndex
-    Meal.create({ name, ingredients, color })
-        .then(meal => {
-            console.log("MEAL", meal)
-            const queryBreakfast = `weekdays.${index}.breakfast`
-            const queryMsnack = `weekdays.${index}.morningsnack`
-            const queryLunch = `weekdays.${index}.lunch`
-            const queryLsnack = `weekdays.${index}.afternoonsnack`
-            const queryDinner = `weekdays.${index}.dinner`
+    Meal.create({ name, ingredients, color }).then(meal => {
+        console.log("MEAL", meal)
+        const queryBreakfast = `weekdays.${index}.breakfast`
+        const queryMsnack = `weekdays.${index}.morningsnack`
+        const queryLunch = `weekdays.${index}.lunch`
+        const queryLsnack = `weekdays.${index}.afternoonsnack`
+        const queryDinner = `weekdays.${index}.dinner`
 
-            //console.log(query)
-            if (req.params.meal === "bfast") {
-                Plan.findOneAndUpdate({ _owner }, { [queryBreakfast]: meal._id }, { new: true })
-                    .then(plan => {
-                        console.log("here is a new meal", plan)
-                        res.redirect("/create-plan")
-                    })
-                    .catch(err => {
-                        console.log("thre was an error updating the plan")
-                    })
-            } else if (req.params.meal === "msnack") {
-                Plan.findOneAndUpdate({ _owner }, { [queryMsnack]: meal._id }, { new: true }).then(plan => {
+        //console.log(query)
+        if (req.params.meal === "bfast") {
+            Plan.findOneAndUpdate({ _owner }, { [queryBreakfast]: meal._id }, { new: true })
+                .then(plan => {
                     console.log("here is a new meal", plan)
                     res.redirect("/create-plan")
                 })
-            } else if (req.params.meal === "lunch") {
-                Plan.findOneAndUpdate({ _owner }, { [queryLunch]: meal._id }, { new: true }).then(plan => {
-                    console.log("here is a new meal", plan)
-                    res.redirect("/create-plan")
+                .catch(err => {
+                    console.log("thre was an error updating the plan")
                 })
-            } else if (req.params.meal === "lsnack") {
-                Plan.findOneAndUpdate({ _owner }, { [queryLsnack]: meal._id }, { new: true }).then(plan => {
-                    console.log("here is a new meal", plan)
-                    res.redirect("/create-plan")
-                })
-            } else if (req.params.meal === "dinner") {
-                Plan.findOneAndUpdate({ _owner }, { $set: { [queryDinner]: meal._id } }, { new: true }).then(plan => {
-                    console.log("here is a new meal", plan)
-                    res.redirect("/create-plan")
-                })
-            }
-        })
+        } else if (req.params.meal === "msnack") {
+            Plan.findOneAndUpdate({ _owner }, { [queryMsnack]: meal._id }, { new: true }).then(plan => {
+                console.log("here is a new meal", plan)
+                res.redirect("/create-plan")
+            })
+        } else if (req.params.meal === "lunch") {
+            Plan.findOneAndUpdate({ _owner }, { [queryLunch]: meal._id }, { new: true }).then(plan => {
+                console.log("here is a new meal", plan)
+                res.redirect("/create-plan")
+            })
+        } else if (req.params.meal === "lsnack") {
+            Plan.findOneAndUpdate({ _owner }, { [queryLsnack]: meal._id }, { new: true }).then(plan => {
+                console.log("here is a new meal", plan)
+                res.redirect("/create-plan")
+            })
+        } else if (req.params.meal === "dinner") {
+            Plan.findOneAndUpdate({ _owner }, { $set: { [queryDinner]: meal._id } }, { new: true }).then(plan => {
+                console.log("here is a new meal", plan)
+                res.redirect("/create-plan")
+            })
+        }
+    })
 
-router.get('/shoppinglist', authenticationCheck, (req, res, next) => {
-  let id = req.user._id;
-  Plan.findOne({ _owner: id })
-    .populate('weekdays.breakfast')
-    .populate('weekdays.morningsnack')
-    .populate('weekdays.lunch')
-    .populate('weekdays.afternoonsnack')
-    .populate('weekdays.dinner')
-    .then(plan => {
-      let weekArray = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-      res.render('userarea/shoppinglist', {
-        day: req.params.dayIndex,
-        meal: req.params.meal,
-        weekArray,
-        user: req.user,
-        plan: plan.weekdays
-      });
-    });
-});
+    router.get("/shoppinglist", authenticationCheck, (req, res, next) => {
+        let id = req.user._id
+        Plan.findOne({ _owner: id })
+            .populate("weekdays.breakfast")
+            .populate("weekdays.morningsnack")
+            .populate("weekdays.lunch")
+            .populate("weekdays.afternoonsnack")
+            .populate("weekdays.dinner")
+            .then(plan => {
+                let weekArray = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+                res.render("userarea/shoppinglist", {
+                    day: req.params.dayIndex,
+                    meal: req.params.meal,
+                    weekArray,
+                    user: req.user,
+                    plan: plan.weekdays
+                })
+            })
+    })
+})
 
 router.get("/shoppinglist", authenticationCheck, (req, res, next) => {
     res.render("userarea/shoppinglist")

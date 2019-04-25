@@ -10,7 +10,6 @@ html {
 @media only screen and (max-width: 768px) {
   body {
     font-size: 1rem;
-    background-color: red;
     overflow: hidden; }
   /*  .buttons {
         display: flex;
@@ -46,13 +45,8 @@ html {
 
 /* Body section */
 body {
-<<<<<<< HEAD
   font-family: "Varela Round", sans-serif;
   height: 100vh;
-=======
-  font-family: 'Varela Round', sans-serif;
-  height: 106vh;
->>>>>>> 8ef892e7162a4c19b5c5411d0476fa55a5415722
   overflow: hidden; }
 
 .login-body {
@@ -173,7 +167,7 @@ a:hover {
   text-decoration: none;
   background: #0ad800;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -194,13 +188,8 @@ a:hover {
   flex-wrap: wrap;
   width: 50%;
   color: #fff;
-<<<<<<< HEAD
   font-size: 3.5vw;
   font-family: "Varela Round", sans-serif;
-=======
-  font-size: 2.5em;
-  font-family: 'Varela Round', sans-serif;
->>>>>>> 8ef892e7162a4c19b5c5411d0476fa55a5415722
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid #0ad800;
@@ -317,7 +306,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem; }
+  margin-top: 2.5rem; }
 
 .section {
   display: flex;
@@ -363,7 +352,7 @@ a:hover {
 .account-message {
   padding: 5px 0 5px 0;
   margin-left: 0;
-  font-size: 1em; }
+  font-size: 1.5vw; }
 
 .error-message {
   color: #ce0000; }
@@ -375,13 +364,13 @@ span {
 .login-btn {
   border: none;
   border-radius: 5px;
-  padding: 1rem 3rem;
-  margin-right: 3px;
+  padding: 1em 3em;
+  width: 15vw;
   text-decoration: none;
   background: #0069ed;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 1rem;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.5vw;
   cursor: pointer;
   text-align: center;
   transition: background 250ms ease-in-out, transform 150ms ease;
@@ -393,23 +382,19 @@ span {
 .login-btn:focus {
   background: #0053ba; }
 
-/* .login-btn:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
-} */
 .login-btn:active {
   transform: scale(0.99); }
 
 .signup-btn {
   border: none;
   border-radius: 5px;
-  padding: 1rem 2.5rem;
-  margin-left: 3px;
+  padding: 1em 3em;
+  width: 15vw;
   text-decoration: none;
   background: #ff8c00;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 1rem;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.5vw;
   cursor: pointer;
   text-align: center;
   transition: background 250ms ease-in-out, transform 150ms ease;
@@ -423,6 +408,9 @@ span {
 
 .signup-btn:active {
   transform: scale(0.99); }
+
+.social-logins {
+  font-size: 1vw; }
 
 /*create-plan*/
 #create-plan-container {
@@ -467,32 +455,65 @@ span {
 #cp-bgcolor1 {
   width: 15px;
   height: 15px;
-  background-color: lightblue; }
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  cursor: pointer; }
 
 #cp-bgcolor2 {
   width: 15px;
   height: 15px;
-  background-color: lightcyan; }
+  background-color: rgba(122, 195, 255, 0.8);
+  border-radius: 50px;
+  cursor: pointer; }
 
 #cp-bgcolor3 {
   width: 15px;
   height: 15px;
-  background-color: lightseagreen; }
+  background-color: rgba(32, 178, 171, 0.8);
+  border-radius: 50px;
+  cursor: pointer; }
 
 #cp-bgcolor4 {
   width: 15px;
   height: 15px;
-  background-color: darkgoldenrod; }
+  background-color: rgba(255, 191, 30, 0.8);
+  border-radius: 50px;
+  cursor: pointer; }
 
 #cp-bgcolor5 {
   width: 15px;
   height: 15px;
-  background-color: darkmagenta; }
+  background-color: rgba(255, 58, 58, 0.8);
+  border-radius: 50px;
+  cursor: pointer; }
 
 #cp-bgcolor6 {
   width: 15px;
   height: 15px;
-  background-color: darkolivegreen; }
+  background-color: #00ba38a8;
+  border-radius: 50px;
+  cursor: pointer; }
+
+#cp-bgcolor7 {
+  width: 15px;
+  height: 15px;
+  background-color: #7455ff9d;
+  border-radius: 50px;
+  cursor: pointer; }
+
+#cp-bgcolor8 {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(2, 119, 0, 0.753);
+  border-radius: 50px;
+  cursor: pointer; }
+
+#cp-bgcolor9 {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 251, 6, 0.74);
+  border-radius: 50px;
+  cursor: pointer; }
 
 .cp-customizeweekdaycolor {
   width: inherit;
@@ -512,32 +533,65 @@ span {
 #cp-wdcolor1 {
   width: 15px;
   height: 15px;
-  background-color: lightblue; }
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  cursor: pointer; }
 
 #cp-wdcolor2 {
   width: 15px;
   height: 15px;
-  background-color: lightcyan; }
+  background-color: rgba(122, 195, 255, 0.8);
+  border-radius: 50px;
+  cursor: pointer; }
 
 #cp-wdcolor3 {
   width: 15px;
   height: 15px;
-  background-color: lightseagreen; }
+  background-color: rgba(32, 178, 171, 0.8);
+  border-radius: 50px;
+  cursor: pointer; }
 
 #cp-wdcolor4 {
   width: 15px;
   height: 15px;
-  background-color: darkgoldenrod; }
+  background-color: rgba(255, 191, 30, 0.8);
+  border-radius: 50px;
+  cursor: pointer; }
 
 #cp-wdcolor5 {
   width: 15px;
   height: 15px;
-  background-color: darkmagenta; }
+  background-color: rgba(255, 58, 58, 0.8);
+  border-radius: 50px;
+  cursor: pointer; }
 
 #cp-wdcolor6 {
   width: 15px;
   height: 15px;
-  background-color: darkolivegreen; }
+  background-color: #00ba38a8;
+  border-radius: 50px;
+  cursor: pointer; }
+
+#cp-wdcolor7 {
+  width: 15px;
+  height: 15px;
+  background-color: #7455ff9d;
+  border-radius: 50px;
+  cursor: pointer; }
+
+#cp-wdcolor8 {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(2, 119, 0, 0.753);
+  border-radius: 50px;
+  cursor: pointer; }
+
+#cp-wdcolor9 {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 251, 6, 0.74);
+  border-radius: 50px;
+  cursor: pointer; }
 
 p {
   color: #fff;
@@ -555,7 +609,7 @@ p {
   text-decoration: none;
   background: #ff8c00;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -581,11 +635,7 @@ p {
 #cp-backgroundofplan {
   width: 950px;
   height: 550px;
-<<<<<<< HEAD
   background-color: rgba(255, 255, 255, 0.425);
-=======
-  background-color: lightsalmon;
->>>>>>> 8ef892e7162a4c19b5c5411d0476fa55a5415722
   /* background-image: url(https://images.unsplash.com/photo-1527324546834-40c5d61f140f?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
     background-size: cover; */
   border-radius: 20px; }
@@ -625,13 +675,21 @@ td {
   font-family: "Varela Round", sans-serif;
   background-color: #0069ed;
   color: #fff;
+  margin-top: 330px;
   padding: 4px 4px;
   font-size: 15px;
   border-radius: 5px; }
 
 .cp-tablebody button {
-  width: 40px;
-  height: 25px; }
+  /* width: 40px;
+    height: 25px; */
+  /* margin-top: 30px; */ }
+
+.cp-tablebody p {
+  margin-bottom: 10px;
+  color: #000;
+  padding: 4px 0 2px 0;
+  margin-left: 0; }
 
 #cp-plan  {
   border: 1px solid black; }
@@ -672,14 +730,15 @@ td {
 
 .am-add-mealsForm {
   width: 500px;
-  height: 500px;
+  height: 600px;
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   flex-direction: column;
-  border-radius: 20px; }
+  border-radius: 20px;
+  margin-bottom: 50px; }
 
 .am-add-mealsForm form {
   width: 300px;
@@ -710,7 +769,7 @@ td {
   text-decoration: none;
   background: #0ad800;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -735,7 +794,9 @@ td {
   font-size: 2em;
   margin: 15px; }
 
-<<<<<<< HEAD
+.breakfastList {
+  color: black; }
+
 .sl-container {
   display: flex;
   flex-direction: column;
@@ -745,22 +806,69 @@ td {
   width: 100vw;
   height: 70vh;
   background-color: #0069ed; }
-=======
-.breakfastList {
-  color: black; }
 
 .sl-shoppinglist-container {
+  background-image: url(https://images.unsplash.com/photo-1507123948929-86a949bdaa23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1372&q=80);
   width: 100vw;
   height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.shopping-list-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center; }
 
-.sl-innerDiv {
-  width: 400px;
+.shopping-list {
+  width: 55%;
+  margin-left: 45px;
   height: 500px;
-  background-color: grey; }
->>>>>>> 8ef892e7162a4c19b5c5411d0476fa55a5415722
+  background-color: rgba(255, 255, 255, 0.041); }
+
+.sl-h2 {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 4vw;
+  justify-content: center;
+  color: #fff; }
+
+.print-op {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: 30px;
+  width: 20%; }
+
+.print {
+  border: none;
+  border-radius: 5px;
+  padding: 1em 3em;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.5vw;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+.login-btn:hover,
+.login-btn:focus {
+  background: #0053ba; }
+
+.login-btn:active {
+  transform: scale(0.99); }
+
+p #or {
+  margin-left: 0; }
+
+.back-to-new-meal-plan {
+  padding-top: 20px;
+  font-size: 10px; }
 
 /*# sourceMappingURL=style.css.map */
 
