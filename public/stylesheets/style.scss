@@ -493,8 +493,17 @@ span {
 #create-plan-container {
     width: inherit;
     height: inherit;
-    background: linear-gradient(90deg, rgba(1, 0, 19, 1) 0%, rgba(88, 97, 122, 1) 64%, rgba(255, 255, 255, 1) 100%);
+    background-image: url("https://images.unsplash.com/photo-1543353071-873f17a7a088?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+//   background: linear-gradient(
+//     90deg,
+//     rgba(1, 0, 19, 1) 0%,
+//     rgba(88, 97, 122, 1) 64%,
+//     rgba(255, 255, 255, 1) 100%
+//   );
 
 .cp-heading-wrapper {
     color: #fff;
@@ -512,7 +521,7 @@ span {
 .cp-customizeTable {
     width: 300px;
     height: inherit;
-    background-color: rgba(211, 211, 211, 0.322);
+    background-color: rgba(0, 0, 0, 0.8);
     margin-left: 10px;
     border-radius: 20px;
 }
@@ -855,6 +864,10 @@ td {
     margin: 15px;
 }
 
+.breakfastList {
+    color: black;
+}
+
 // shopping list
 
 .sl-container {
@@ -881,5 +894,21 @@ td {
 //   width: inherit;
 //   height: inherit;
 // }
+
+//shoppinglist//
+
+.sl-shoppinglist-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sl-innerDiv {
+    width: 400px;
+    height: 500px;
+    background-color: grey;
+}
 
 /*# sourceMappingURL=style.css.map */

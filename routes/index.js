@@ -114,10 +114,25 @@ router.post("/add-meals/:dayIndex/:meal", (req, res) => {
             }
         })
 
-        .catch(err => {
-            console.error("Error while creating book", err)
-        })
-})
+router.get('/shoppinglist', authenticationCheck, (req, res, next) => {
+  let id = req.user._id;
+  Plan.findOne({ _owner: id })
+    .populate('weekdays.breakfast')
+    .populate('weekdays.morningsnack')
+    .populate('weekdays.lunch')
+    .populate('weekdays.afternoonsnack')
+    .populate('weekdays.dinner')
+    .then(plan => {
+      let weekArray = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+      res.render('userarea/shoppinglist', {
+        day: req.params.dayIndex,
+        meal: req.params.meal,
+        weekArray,
+        user: req.user,
+        plan: plan.weekdays
+      });
+    });
+});
 
 router.get("/shoppinglist", authenticationCheck, (req, res, next) => {
     res.render("userarea/shoppinglist")

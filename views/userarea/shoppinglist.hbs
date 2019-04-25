@@ -1,4 +1,15 @@
-<div class="sl-container">
+<div class="sl-shoppinglist-container">
   <h2>This is your shoppinglist</h2>
+  <div class="sl-innerDiv">
+    <ul>
+      {{#each weekArray}}
+      <li>
+        {{#with (lookup ../plan @index)}}
+        {{breakfast.ingredients}}
+        {{/with}}
+      </li>
+      {{/each}}
+    </ul>
+  </div>
   <a href="/welcome">Go back to create a new mealplan for next week</a>
 </div>
