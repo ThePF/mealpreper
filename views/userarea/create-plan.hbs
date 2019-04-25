@@ -53,31 +53,33 @@
           </thead>
           <tbody class="cp-tablebody">
             <tr>
-              <td>Breakfast</td>
+              <td class="breakfast">Breakfast</td>
               {{#each weekArray}}
               <td>
                 {{#with (lookup ../plan @index)}}
                 {{breakfast.name}}
                 {{/with}}
-                <div><button id="{{@index}}bfast"><a href="/add-meals/{{@index}}/bfast">Add</a></button>
+                <div><button>
+                    <id="{{@index}}bfast"><a class="add-meal" href="/add-meals/{{@index}}/bfast">Add</a>
+                  </button>
                 </div>
               </td>
               {{/each}}
             </tr>
             <tr>
-              <td>Snack</td>
+              <td class="snack">Snack</td>
               {{#each weekArray}}
               <td>
                 {{#with (lookup ../plan @index)}}
                 {{morningsnack.name}}
                 {{/with}}
-                <div><button id="{{@index}}msnack"><a href="/add-meals/{{@index}}/msnack">Add</a></button>
+                <div><button id="{{@index}}msnack"><a href="/add-meals/{{@index}}/msnack">+</a></button>
                 </div>
               </td>
               {{/each}}
             </tr>
             <tr>
-              <td>Lunch</td>
+              <td class="lunch">Lunch</td>
               {{#each weekArray}}
               <td>{{#with (lookup ../plan @index)}}
                 {{lunch.name}}
@@ -88,7 +90,7 @@
               {{/each}}
             </tr>
             <tr>
-              <td>Snack</td>
+              <td class="snack">Snack</td>
               {{#each weekArray}}
               <td>{{#with (lookup ../plan @index)}}
                 {{afternoonsnack.name}}
@@ -99,7 +101,7 @@
               {{/each}}
             </tr>
             <tr>
-              <td>Dinner</td>
+              <td class="dinner">Dinner</td>
               {{#each weekArray}}
               <td>{{#with (lookup ../plan @index)}}
                 {{dinner.name}}

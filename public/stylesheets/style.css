@@ -11,7 +11,7 @@ html {
   body {
     font-size: 1rem;
     background-color: red;
-    overflow-x: scroll; }
+    overflow: hidden; }
   /*  .buttons {
         display: flex;
         flex-wrap: wrap;
@@ -47,8 +47,8 @@ html {
 /* Body section */
 body {
   font-family: "Varela Round", sans-serif;
-  height: 106vh;
-  /* overflow: hidden; */ }
+  height: 100vh;
+  overflow: hidden; }
 
 .login-body {
   font-size: 0.9rem;
@@ -145,7 +145,7 @@ a:hover {
 
 .welcome-h2 {
   color: white;
-  font-size: 4rem;
+  font-size: 5vw;
   margin-bottom: 10px;
   text-align: center;
   width: 1200px; }
@@ -156,7 +156,7 @@ a:hover {
 .welcome-h3 {
   color: white;
   margin-bottom: 90px;
-  font-size: 3rem;
+  font-size: 4vw;
   width: 1200px;
   text-align: center; }
 
@@ -187,9 +187,9 @@ a:hover {
 .landing-heading {
   display: flex;
   flex-wrap: wrap;
-  width: 50vw;
+  width: 50%;
   color: #fff;
-  font-size: 2.5em;
+  font-size: 3.5vw;
   font-family: "Varela Round", sans-serif;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
@@ -216,7 +216,7 @@ a:hover {
   from,
   to {
     border-color: transparent; }
-  50% {
+  40% {
     border-color: #0ad800; } }
 
 .landing-text {
@@ -345,16 +345,22 @@ a:hover {
 
 #username,
 #password {
-  width: 50%;
+  width: 70%;
   height: 1.9rem;
   border-radius: 5px;
   display: block; }
 
 .account-message {
-  padding-bottom: 5px; }
+  padding: 5px 0 5px 0;
+  margin-left: 0;
+  font-size: 1em; }
+
+.error-message {
+  color: #ce0000; }
 
 span {
-  color: #fff; }
+  color: #fff;
+  font-size: 1em; }
 
 .login-btn {
   border: none;
@@ -563,7 +569,7 @@ p {
 #cp-backgroundofplan {
   width: 950px;
   height: 550px;
-  background-color: #08a700;
+  background-color: rgba(255, 255, 255, 0.425);
   /* background-image: url(https://images.unsplash.com/photo-1527324546834-40c5d61f140f?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
     background-size: cover; */
   border-radius: 20px; }
@@ -578,16 +584,38 @@ th {
   border: 2px solid black; }
 
 td {
+  font-weight: 900;
+  text-align: center;
   border: 1px solid black;
   width: 100px;
-  height: 50px; }
+  height: 50px;
+  border-radius: 10px; }
+
+.breakfast {
+  background-color: #fff; }
+
+.lunch {
+  background-color: #fff; }
+
+.snack {
+  background-color: #cacaca;
+  height: 10px; }
+
+.dinner {
+  background-color: #fff; }
 
 .cp-tablebody a {
-  color: black; }
+  text-decoration: none;
+  font-family: "Varela Round", sans-serif;
+  background-color: #0069ed;
+  color: #fff;
+  padding: 4px 4px;
+  font-size: 15px;
+  border-radius: 5px; }
 
 .cp-tablebody button {
-  width: 20px;
-  height: 10px; }
+  width: 40px;
+  height: 25px; }
 
 #cp-plan  {
   border: 1px solid black; }
@@ -601,12 +629,11 @@ td {
   height: 50px;
   /* border-collapse: 1px solid black; */ }
 
-/* .meal-btn {
+/* .add-meal {
     color: #fff;
     text-decoration: none;
     background-color: #0ad800;
-    padding: 2px 2px;
-    border-radius: 3px;
+    padding: 4px 4px;
 } */
 .cp-addMealsBtns a {
   color: black; }
@@ -691,6 +718,16 @@ td {
   color: white;
   font-size: 2em;
   margin: 15px; }
+
+.sl-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1520004434532-668416a08753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+  display: cover;
+  width: 100vw;
+  height: 70vh;
+  background-color: #0069ed; }
 
 /*# sourceMappingURL=style.css.map */
 
