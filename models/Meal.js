@@ -11,7 +11,8 @@ const mealSchema = new Schema({
     validate: [arrayLimit, 'too many ingredients']
   },
   color: {
-    type: String
+    type: String,
+    enum: ['red', 'blue', 'green']
   },
 
   calories: {

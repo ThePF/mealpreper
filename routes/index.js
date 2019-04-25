@@ -119,6 +119,7 @@ router.post('/add-meals/:dayIndex/:meal', (req, res) => {
   const { name, i0, i1, i2, i3, i4, i5, color } = req.body;
   let ingredients = [i0, i1, i2, i3, i4, i5];
   let _owner = req.user._id;
+  let color = '';
   let index = req.params.dayIndex;
   Meal.create({ name, ingredients, color }).then(meal => {
     console.log('MEAL', meal);
