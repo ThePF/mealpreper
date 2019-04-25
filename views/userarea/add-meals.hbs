@@ -40,18 +40,86 @@
   </div>
   <div class="am-mealsList">
     <h4>Mealslist</h4>
-    <ul>
-      {{#each weekArray}}
-      <li>
-        {{#with (lookup ../plan @index)}}
-        <p>{{breakfast.name}}</p>
-        <form action="/copy/{{breakfast._id}}/{{../../day}}/{{../../meal}}" method="POST">
-          <button type="submit">Add</button>
-        </form>
-        {{/with}}
-      </li>
-      {{/each}}
-    </ul>
+    <div class="am-singlemealslists">
+      <h3>Breakfast</h3>
+      <div class="wraplists">
+        <ul>
+          {{#each weekArray}}
+          <li>
+            {{#with (lookup ../plan @index)}}
+
+            <form action="/copy/{{breakfast._id}}/{{../../day}}/{{../../meal}}" method="POST">
+              <p>{{breakfast.name}} <button type="submit"> + </button></p>
+            </form>
+            {{/with}}
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="am-singlemealslists">
+        <h3>Morningsnack</h3>
+        <div class="wraplists">
+          <ul>
+            {{#each weekArray}}
+            <li>
+              {{#with (lookup ../plan @index)}}
+              <p>{{morningsnack.name}} <button type="submit"> + </button></p>
+              <form action="/copy/{{morningsnack._id}}/{{../../day}}/{{../../meal}}" method="POST">
+              </form>
+              {{/with}}
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+        <div class="am-singlemealslists">
+          <h3>Lunch</h3>
+          <div class="wraplists">
+            <ul>
+              {{#each weekArray}}
+              <li>
+                {{#with (lookup ../plan @index)}}
+                <p>{{lunch.name}} <button type="submit"> + </button></p>
+                <form action="/copy/{{lunch._id}}/{{../../day}}/{{../../meal}}" method="POST">
+                </form>
+                {{/with}}
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+          <div class="am-singlemealslists">
+            <h3>Afternoonsnack</h3>
+            <br>
+            <div class="wraplists">
+              <ul>
+                {{#each weekArray}}
+                <li>
+                  {{#with (lookup ../plan @index)}}
+                  <p>{{afternoonsnack.name}} <button type="submit"> + </button></p>
+                  <form action="/copy/{{afternoonsnack._id}}/{{../../day}}/{{../../meal}}" method="POST">
+                  </form>
+                  {{/with}}
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+            <div class="am-singlemealslists">
+              <h3>Dinner</h3>
+              <ul>
+                {{#each weekArray}}
+                <li>
+                  {{#with (lookup ../plan @index)}}
+                  <p>{{dinner.name}} <button type="submit"> + </button></p>
+                  <form action="/copy/{{dinner._id}}/{{../../day}}/{{../../meal}}" method="POST">
+                  </form>
+                  {{/with}}
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
