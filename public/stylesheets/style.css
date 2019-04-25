@@ -46,13 +46,8 @@ html {
 
 /* Body section */
 body {
-<<<<<<< HEAD
   font-family: "Varela Round", sans-serif;
   height: 100vh;
-=======
-  font-family: 'Varela Round', sans-serif;
-  height: 106vh;
->>>>>>> 8ef892e7162a4c19b5c5411d0476fa55a5415722
   overflow: hidden; }
 
 .login-body {
@@ -173,7 +168,7 @@ a:hover {
   text-decoration: none;
   background: #0ad800;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -194,13 +189,8 @@ a:hover {
   flex-wrap: wrap;
   width: 50%;
   color: #fff;
-<<<<<<< HEAD
   font-size: 3.5vw;
   font-family: "Varela Round", sans-serif;
-=======
-  font-size: 2.5em;
-  font-family: 'Varela Round', sans-serif;
->>>>>>> 8ef892e7162a4c19b5c5411d0476fa55a5415722
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid #0ad800;
@@ -380,7 +370,7 @@ span {
   text-decoration: none;
   background: #0069ed;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -408,7 +398,7 @@ span {
   text-decoration: none;
   background: #ff8c00;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -555,7 +545,7 @@ p {
   text-decoration: none;
   background: #ff8c00;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -581,11 +571,7 @@ p {
 #cp-backgroundofplan {
   width: 950px;
   height: 550px;
-<<<<<<< HEAD
   background-color: rgba(255, 255, 255, 0.425);
-=======
-  background-color: lightsalmon;
->>>>>>> 8ef892e7162a4c19b5c5411d0476fa55a5415722
   /* background-image: url(https://images.unsplash.com/photo-1527324546834-40c5d61f140f?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
     background-size: cover; */
   border-radius: 20px; }
@@ -710,7 +696,7 @@ td {
   text-decoration: none;
   background: #0ad800;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -735,7 +721,9 @@ td {
   font-size: 2em;
   margin: 15px; }
 
-<<<<<<< HEAD
+.breakfastList {
+  color: black; }
+
 .sl-container {
   display: flex;
   flex-direction: column;
@@ -745,9 +733,6 @@ td {
   width: 100vw;
   height: 70vh;
   background-color: #0069ed; }
-=======
-.breakfastList {
-  color: black; }
 
 .sl-shoppinglist-container {
   width: 100vw;
@@ -760,7 +745,6 @@ td {
   width: 400px;
   height: 500px;
   background-color: grey; }
->>>>>>> 8ef892e7162a4c19b5c5411d0476fa55a5415722
 
 .view-schedule-container {
   width: inherit;
