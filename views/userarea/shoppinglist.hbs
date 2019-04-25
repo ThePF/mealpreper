@@ -1,16 +1,18 @@
 <div class="sl-shoppinglist-container">
-  <h2>This is your shoppinglist</h2>
-  <div class="sl-innerDiv">
+  <h2 class="sl-h2">This is your shoppinglist</h2>
+  <div class="shopping-list-wrapper">
+    <div class="shopping-list">
+      <ul>
+        {{#each weekArray}}
 
-    <ul>
-      {{#each weekArray}}
+        {{#with (lookup ../plan @index)}}
+        <li>{{breakfast.ingredients}}</li>
+        {{/with}}
 
-      {{#with (lookup ../plan @index)}}
-      <li>{{breakfast.ingredients}}</li>
-      {{/with}}
-
-      {{/each}}
-    </ul>
-  </div>
-  <a href="/welcome">Go back to create a new mealplan for next week</a>
-</div>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="print-op">
+      <button class="print" onClick="window.print()">Print this page</button>
+      <a class="back-to-new-meal-plan" href="/welcome">Go back to create a new mealplan for next week</a>
+    </div>

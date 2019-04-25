@@ -1,6 +1,6 @@
 <div id="create-plan-container">
   <div class="cp-heading-wrapper">
-    <h2>How do you want to design your plan, {{username}}?</h2>
+    <h2 class="design">How do you want to design your plan, {{username}}?</h2>
   </div>
   <div class="cp-divbackgroundofcp">
     <div class="cp-customizeTable">
@@ -14,6 +14,9 @@
             <button id="cp-bgcolor4"></button>
             <button id="cp-bgcolor5"></button>
             <button id="cp-bgcolor6"></button>
+            <button id="cp-bgcolor7"></button>
+            <button id="cp-bgcolor8"></button>
+            <button id="cp-bgcolor9"></button>
           </div>
         </div>
 
@@ -26,6 +29,9 @@
             <button id="cp-wdcolor4"></button>
             <button id="cp-wdcolor5"></button>
             <button id="cp-wdcolor6"></button>
+            <button id="cp-wdcolor7"></button>
+            <button id="cp-wdcolor8"></button>
+            <button id="cp-wdcolor9"></button>
           </div>
         </div>
 
@@ -56,10 +62,12 @@
               <td class="breakfast">Breakfast</td>
               {{#each weekArray}}
               <td>
-                <div id="{{@index}}mealicon">
-                  {{#with (lookup ../plan @index)}}
-                  {{breakfast.name}}
-                  {{/with}}
+                <div class="mealicon">
+                  <div>
+                    {{#with (lookup ../plan @index)}}
+                    {{breakfast.name}}
+                    {{/with}}
+                  </div>
                   <button id="{{@index}}Breakfast"><a href="/add-meals/{{@index}}/Breakfast">Add</a></button>
                 </div>
               </td>
@@ -70,7 +78,7 @@
               {{#each weekArray}}
               <td>
                 {{#with (lookup ../plan @index)}}
-                {{morningsnack.name}}
+                <p>{{morningsnack.name}}</p>
                 {{/with}}
                 <div><button id="{{@index}}Morningsnack"><a href="/add-meals/{{@index}}/Morningsnack">Add</a></button>
                 </div>
@@ -81,7 +89,7 @@
               <td class="lunch">Lunch</td>
               {{#each weekArray}}
               <td>{{#with (lookup ../plan @index)}}
-                {{lunch.name}}
+                <p>{{lunch.name}}</p>
                 {{/with}}
                 <div><button id="{{@index}}Lunch"><a href="/add-meals/{{@index}}/Lunch">Add</a></button>
                 </div>
@@ -92,7 +100,7 @@
               <td class="snack">Snack</td>
               {{#each weekArray}}
               <td>{{#with (lookup ../plan @index)}}
-                {{afternoonsnack.name}}
+                <p>{{afternoonsnack.name}}</p>
                 {{/with}}
                 <div><button id="{{@index}}Afternoonsnack"><a
                       href="/add-meals/{{@index}}/Afternoonsnack">Add</a></button>
@@ -104,7 +112,7 @@
               <td class="dinner">Dinner</td>
               {{#each weekArray}}
               <td>{{#with (lookup ../plan @index)}}
-                {{dinner.name}}
+                <p>{{dinner.name}}</p>
                 {{/with}}
                 <div><button id="{{@index}}Dinner"><a href="/add-meals/{{@index}}/Dinner">Add</a></button>
                 </div>
