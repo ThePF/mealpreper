@@ -4,11 +4,11 @@
     <div class="shopping-list">
       <ul>
         {{#each weekArray}}
-        <li>
-          {{#with (lookup ../plan @index)}}
-          {{breakfast.ingredients}}
-          {{/with}}
-        </li>
+
+        {{#with (lookup ../plan @index)}}
+        <li>{{breakfast.ingredients}}</li>
+        {{/with}}
+
         {{/each}}
       </ul>
     </div>
@@ -16,6 +16,3 @@
       <button class="print" onClick="window.print()">Print this page</button>
       <a class="back-to-new-meal-plan" href="/welcome">Go back to create a new mealplan for next week</a>
     </div>
-  </div>
-
-</div>

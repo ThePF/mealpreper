@@ -48,13 +48,13 @@
           <thead>
             <tr class="cp-weekdays">
               <th class="cp-weekday">Meals</th>
-              <th class="cp-weekday" id="mon">Monday</th>
-              <th class="cp-weekday">Tuesday</th>
-              <th class="cp-weekday">Wednesday</th>
-              <th class="cp-weekday">Thursday</th>
-              <th class="cp-weekday">Friday</th>
-              <th class="cp-weekday">Saturday</th>
-              <th class="cp-weekday">Sunday</th>
+              <th class="cp-weekday"><a href="/viewschedule/0">Monday</a></th>
+              <th class="cp-weekday"><a href="/viewschedule/1">Tuesday</a></th>
+              <th class="cp-weekday"><a href="/viewschedule/2">Wednesday</a></th>
+              <th class="cp-weekday"><a href="/viewschedule/3">Thursday</a></th>
+              <th class="cp-weekday"><a href="/viewschedule/4">Friday</a></th>
+              <th class="cp-weekday"><a href="/viewschedule/5">Saturday</a></th>
+              <th class="cp-weekday"><a href="/viewschedule/6">Sunday</a></th>
             </tr>
           </thead>
           <tbody class="cp-tablebody">
@@ -62,12 +62,11 @@
               <td class="breakfast">Breakfast</td>
               {{#each weekArray}}
               <td>
-                {{#with (lookup ../plan @index)}}
-                <p id="meal-bf">{{breakfast.name}}</p>
-                {{/with}}
-                <div><button>
-                    <id="{{@index}}bfast"><a class="add-meal" href="/add-meals/{{@index}}/bfast">Add</a>
-                  </button>
+                <div id="{{@index}}mealicon">
+                  {{#with (lookup ../plan @index)}}
+                  {{breakfast.name}}
+                  {{/with}}
+                  <button id="{{@index}}Breakfast"><a href="/add-meals/{{@index}}/Breakfast">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -79,7 +78,7 @@
                 {{#with (lookup ../plan @index)}}
                 <p>{{morningsnack.name}}</p>
                 {{/with}}
-                <div><button id="{{@index}}msnack"><a href="/add-meals/{{@index}}/msnack">Add</a></button>
+                <div><button id="{{@index}}Morningsnack"><a href="/add-meals/{{@index}}/Morningsnack">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -90,7 +89,7 @@
               <td>{{#with (lookup ../plan @index)}}
                 <p>{{lunch.name}}</p>
                 {{/with}}
-                <div><button id="{{@index}}lunch"><a href="/add-meals/{{@index}}/lunch">Add</a></button>
+                <div><button id="{{@index}}Lunch"><a href="/add-meals/{{@index}}/Lunch">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -101,7 +100,8 @@
               <td>{{#with (lookup ../plan @index)}}
                 <p>{{afternoonsnack.name}}</p>
                 {{/with}}
-                <div><button id="{{@index}}lsnack"><a href="/add-meals/{{@index}}/lsnack">Add</a></button>
+                <div><button id="{{@index}}Afternoonsnack"><a
+                      href="/add-meals/{{@index}}/Afternoonsnack">Add</a></button>
                 </div>
               </td>
               {{/each}}
@@ -112,7 +112,7 @@
               <td>{{#with (lookup ../plan @index)}}
                 <p>{{dinner.name}}</p>
                 {{/with}}
-                <div><button id="{{@index}}dinner"><a href="/add-meals/{{@index}}/dinner">Add</a></button>
+                <div><button id="{{@index}}Dinner"><a href="/add-meals/{{@index}}/Dinner">Add</a></button>
                 </div>
               </td>
               {{/each}}
