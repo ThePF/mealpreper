@@ -1,6 +1,6 @@
 // Eventlistener for add-meals//
 
-for (let i = 0; i <= 6; i++) {
+/* for (let i = 0; i <= 6; i++) {
   const currentButton = document.getElementById(i + 'bfast');
   console.log(currentButton);
   currentButton.onclick = () => {
@@ -10,4 +10,4 @@ for (let i = 0; i <= 6; i++) {
     // weekdays[i].breakfast._id
     console.log(i);
   };
-}
+} */

@@ -71,8 +71,8 @@ wdcolor6 = document.getElementById("cp-wdcolor9")
 
 const wdcurrentColor = document.getElementsByClassName("cp-weekday")
 
-wdcolor1.addEventListener(onclick, function() {
+wdcolor1.addEventListener("click", function() {
     console.log("yes")
     const value = window.getComputedStyle(wdcolor1).getPropertyValue("background-color")
-    wdcurrentColor.style.backgroundColor = value
+    document.querySelectorAll(".cp-weekday").forEach(th => (th.style.backgroundColor = "red"))
 })

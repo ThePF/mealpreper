@@ -45,7 +45,7 @@ html {
 
 /* Body section */
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   height: 100vh;
   overflow: hidden; }
 
@@ -76,18 +76,17 @@ body {
   height: 50px;
   background-color: #292929;
   display: flex;
-  flex-direction: row-reverse; }
+  flex-direction: row;
+  justify-content: center; }
 
 .navbar ul {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  justify-content: flex-end; }
+  flex-direction: row; }
 
 .navbar li {
   display: flex;
-  justify-content: space-between;
-  margin-right: 5vw;
+  margin: 40vw;
   font-size: 1.2rem; }
 
 .navbar #logo {
@@ -97,11 +96,7 @@ body {
   font-weight: 900;
   text-shadow: 3px 3px #3b3b3b; }
 
-.navbar #home {
-  text-decoration: none; }
-
 .navbar #logout {
-  text-align: right;
   text-decoration: none; }
 
 /* Navbar for landing, signup and login page (not in layout) */
@@ -135,7 +130,7 @@ a:hover {
   overflow: hidden; }
 
 .welcome-div {
-  width: 500px;
+  width: 1000px;
   height: 500px;
   display: flex;
   justify-content: center;
@@ -167,7 +162,7 @@ a:hover {
   text-decoration: none;
   background: #0ad800;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -189,7 +184,7 @@ a:hover {
   width: 50%;
   color: #fff;
   font-size: 3.5vw;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid #0ad800;
@@ -369,7 +364,7 @@ span {
   text-decoration: none;
   background: #0069ed;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1.5vw;
   cursor: pointer;
   text-align: center;
@@ -393,7 +388,7 @@ span {
   text-decoration: none;
   background: #ff8c00;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1.5vw;
   cursor: pointer;
   text-align: center;
@@ -609,7 +604,7 @@ p {
   text-decoration: none;
   background: #ff8c00;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -650,6 +645,7 @@ th {
   border: 2px solid black; }
 
 td {
+  padding: 0 !important;
   font-weight: 900;
   text-align: center;
   border: 1px solid black;
@@ -670,20 +666,24 @@ td {
 .dinner {
   background-color: #fff; }
 
+/* .mealicon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    height: 5vh;
+} */
 .cp-tablebody a {
-  text-decoration: none;
-  font-family: 'Varela Round', sans-serif;
-  background-color: #0069ed;
-  color: #fff;
-  margin-top: 330px;
-  padding: 4px 4px;
-  font-size: 15px;
-  border-radius: 5px; }
+  text-decoration: none; }
 
 .cp-tablebody button {
-  /* width: 40px;
-    height: 25px; */
-  /* margin-top: 30px; */ }
+  font-family: "Varela Round", sans-serif;
+  background-color: #0069ed;
+  color: #fff;
+  padding: 4px 4px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-bottom: 0;
+  width: 40px; }
 
 .cp-tablebody p {
   margin-bottom: 10px;
@@ -709,9 +709,6 @@ td {
     background-color: #0ad800;
     padding: 4px 4px;
 } */
-.cp-addMealsBtns a {
-  color: black; }
-
 .am-add-meals-container {
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/ella-olsson-1184066-unsplash.jpg");
   background-size: cover;
@@ -745,7 +742,7 @@ td {
   height: 300px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 90px; }
+  padding-bottom: 160px; }
 
 .am-add-mealsForm label {
   font-size: 14px; }
@@ -753,7 +750,8 @@ td {
 .am-add-mealsForm input {
   width: 80%;
   margin-bottom: 15px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-right: 52px; }
 
 /* .am-add-mealsForm button {
     width: 50px;
@@ -769,7 +767,7 @@ td {
   text-decoration: none;
   background: #0ad800;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -874,7 +872,7 @@ td {
   text-decoration: none;
   background: #0069ed;
   color: #ffffff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1.5vw;
   cursor: pointer;
   text-align: center;
