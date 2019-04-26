@@ -7,7 +7,7 @@ passport.use(
     {
       clientID: '593112787858643',
       clientSecret: 'f98d3d3a23f85b7e4e3b9500cf09070f',
-      callbackURL: 'https://mealpreper.herokuapp.com/auth/facebook/callback'
+      callbackURL: 'http://localhost:3000/auth/facebook/callback'
     },
     (accessToken, refreshToken, profile, done) => {
       User.findOne({ facebookId: profile.id })

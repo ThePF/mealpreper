@@ -45,7 +45,7 @@ html {
 
 /* Body section */
 body {
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   height: 100vh;
   overflow: hidden; }
 
@@ -162,7 +162,7 @@ a:hover {
   text-decoration: none;
   background: #0ad800;
   color: #ffffff;
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -184,7 +184,7 @@ a:hover {
   width: 50%;
   color: #fff;
   font-size: 3.5vw;
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid #0ad800;
@@ -364,7 +364,7 @@ span {
   text-decoration: none;
   background: #0069ed;
   color: #ffffff;
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 1.5vw;
   cursor: pointer;
   text-align: center;
@@ -388,7 +388,7 @@ span {
   text-decoration: none;
   background: #ff8c00;
   color: #ffffff;
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 1.5vw;
   cursor: pointer;
   text-align: center;
@@ -611,7 +611,7 @@ p {
   text-decoration: none;
   background: #08a70000;
   color: #ffffff;
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -716,7 +716,7 @@ td {
   text-decoration: none; }
 
 .cp-tablebody button {
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   background-color: #0069ed;
   color: #fff;
   padding: 4px 4px;
@@ -812,7 +812,7 @@ td {
   text-decoration: none;
   background: #0ad800;
   color: #ffffff;
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -832,15 +832,17 @@ td {
   height: inherit;
   background-color: rgba(0, 0, 0, 0.8); }
 
+.wraplists {
+  display: flex;
+  flex-wrap: wrap; }
+
 .am-mealsList h4 {
   color: white;
   font-size: 2em;
   margin: 15px; }
 
 .am-singlemealslists {
-  display: flex;
-  flex-wrap: wrap;
-  width: 300px;
+  width: 200px;
   height: 200px; }
 
 .am-singlemealslists p {
@@ -917,7 +919,7 @@ td {
   text-decoration: none;
   background: #0069ed;
   color: #ffffff;
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 1em;
   cursor: pointer;
   text-align: center;
@@ -939,7 +941,7 @@ td {
   text-decoration: none;
   background: #08a700;
   color: #ffffff;
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 1em;
   cursor: pointer;
   text-align: center;
