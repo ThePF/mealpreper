@@ -2,14 +2,13 @@
 
   <div class="am-divAroundForm">
     <div class="am-add-mealsForm">
-      <div class="am-header">
-        <h2>{{dayview}}</h2>
-        <h2>{{meal}}</h2>
+      {{!-- <h2 class="dayview-meal">{{dayview}} {{meal}}</h2> --}}
 
-      </div>
+
 
       </h2>
       <form action="/add-meals/{{day}}/{{meal}}" method="POST">
+        <h2 class="dayview-meal">{{dayview}} {{meal}}</h2>
         <label for="name">Name:</label>
         <input type="text" name="name" id="meal-name">
         <label for="i0">First ingredient:</label>
@@ -63,8 +62,8 @@
             {{#each weekArray}}
             <li>
               {{#with (lookup ../plan @index)}}
-              <p>{{morningsnack.name}} <button type="submit"> + </button></p>
               <form action="/copy/{{morningsnack._id}}/{{../../day}}/{{../../meal}}" method="POST">
+                <p>{{morningsnack.name}} <button type="submit"> + </button></p>
               </form>
               {{/with}}
             </li>
@@ -78,8 +77,8 @@
               {{#each weekArray}}
               <li>
                 {{#with (lookup ../plan @index)}}
-                <p>{{lunch.name}} <button type="submit"> + </button></p>
                 <form action="/copy/{{lunch._id}}/{{../../day}}/{{../../meal}}" method="POST">
+                  <p>{{lunch.name}} <button type="submit"> + </button></p>
                 </form>
                 {{/with}}
               </li>
@@ -94,8 +93,8 @@
                 {{#each weekArray}}
                 <li>
                   {{#with (lookup ../plan @index)}}
-                  <p>{{afternoonsnack.name}} <button type="submit"> + </button></p>
                   <form action="/copy/{{afternoonsnack._id}}/{{../../day}}/{{../../meal}}" method="POST">
+                    <p>{{afternoonsnack.name}} <button type="submit"> + </button></p>
                   </form>
                   {{/with}}
                 </li>
@@ -108,8 +107,8 @@
                 {{#each weekArray}}
                 <li>
                   {{#with (lookup ../plan @index)}}
-                  <p>{{dinner.name}} <button type="submit"> + </button></p>
                   <form action="/copy/{{dinner._id}}/{{../../day}}/{{../../meal}}" method="POST">
+                    <p>{{dinner.name}} <button type="submit"> + </button></p>
                   </form>
                   {{/with}}
                 </li>
