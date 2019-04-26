@@ -6,65 +6,63 @@
       <div class="vs-divoflists">
         <div class="vs-lists">
           <h3>Breakfast</h3>
-          <p>{{breakfast.name}}</p>
+          <p>{{breakfastname}}</p>
           <ul>
-            {{#each ingredients}}
+            {{#each ingredientsbreakfast}}
             <li>
-              {{#with (lookup ../plan @index)}}
-              {{breakfast.ingredients}}
-              {{/with}}
+              {{this}}
             </li>
             {{/each}}
           </ul>
         </div>
         <div class="vs-lists">
           <h3>Morningsnack</h3>
-          <p>{{morningsnack.name}}</p>
+          <p>{{morningsnackname}}</p>
           <ul>
-            {{#each ingredients}}
+            {{#each ingredientsmorningsnack}}
             <li>
-              {{#with (lookup ../plan @index)}}
-              {{morningsnack.ingredients}}
-              {{/with}}
+
+              {{this}}
+
             </li>
             {{/each}}
           </ul>
         </div>
         <div class="vs-lists">
           <h3>Lunch</h3>
-          <p>{{lunch.name}}</p>
+          <p>{{lunchname}}</p>
           <ul>
-            {{#each ingredients}}
+            {{#each ingredientslunch}}
             <li>
-              {{#with (lookup ../plan @index)}}
-              {{lunch.ingredients}}
-              {{/with}}
+
+              {{this}}
+
             </li>
             {{/each}}
           </ul>
         </div>
-        <div class="" vs-lists">
+        <div class="vs-lists">
           <h3>Afternoonsnack</h3>
-          <p>{{afternoonsnack.name}}</p>
+          <p>{{afternoonsnackname}}</p>
           <ul>
-            {{#each ingredients}}
+            {{#each ingredientsafternoonsnack}}
             <li>
-              {{#with (lookup ../plan @index)}}
-              {{afternoonsnack.ingredients}}
-              {{/with}}
+
+              {{this}}
+
             </li>
             {{/each}}
           </ul>
         </div>
         <div class="vs-lists">
           <h3>Dinner</h3>
-          <p>{{dinner.name}}</p>
+          <p>{{dinnername}}</p>
           <ul>
-            {{#each ingredients}}
+            {{#each ingredientsdinner}}
             <li>
-              {{#with (lookup ../plan @index)}}
-              {{dinner.ingredients}}
-              {{/with}}
+
+              {{this}}
+
             </li>
             {{/each}}
           </ul>

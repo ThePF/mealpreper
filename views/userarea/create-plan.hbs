@@ -1,6 +1,6 @@
 <div id="create-plan-container">
   <div class="cp-heading-wrapper">
-    <h2 class="design">How do you want to design your plan, {{username}}?</h2>
+    <h2 class="design">How do you want to design your plan {{username}}?</h2>
   </div>
   <div class="cp-divbackgroundofcp">
     <div class="cp-customizeTable">
@@ -35,10 +35,12 @@
           </div>
         </div>
 
-        <p class="style-plan">Meal Icons color</p>
-        <p class="style-plan"> Font Family</p>
-        <p class="style-plan">Background picture</p>
-        <a class="shoppinglist" href="/shoppinglist">View Shoppinglist</a>
+        {{!-- <p class="style-plan">Meal Icons color</p>
+        <p class="style-plan"> Font Family</p> --}}
+        <div class="btn-wrapper">
+          <button class="print-plan" onClick="window.print()">Print this page</button>
+          <a class="shoppinglist" href="/shoppinglist">View Shoppinglist</a>
+        </div>
       </div>
     </div>
     <div class="cp-divbackgroundofplan">
@@ -61,9 +63,6 @@
             <tr>
               <td class="breakfast">Breakfast</td>
               {{#each weekArray}}
-              {{!-- <div class="mealicon"> --}}
-              {{breakfast.color}}
-
               <td style="background-color:
                   {{#with (lookup ../plan @index)}}
               {{breakfast.color}}
@@ -85,7 +84,11 @@
       <tr>
         <td class="snack">Snack</td>
         {{#each weekArray}}
-        <td>
+        <td style="background-color:
+                  {{#with (lookup ../plan @index)}}
+              {{morningsnack.color}}
+                  {{/with}}
+              ">
           {{#with (lookup ../plan @index)}}
           <p>{{morningsnack.name}}</p>
           {{/with}}
@@ -97,7 +100,12 @@
       <tr>
         <td class="lunch">Lunch</td>
         {{#each weekArray}}
-        <td>{{#with (lookup ../plan @index)}}
+        <td style="background-color:
+                  {{#with (lookup ../plan @index)}}
+              {{lunch.color}}
+                  {{/with}}
+
+              ">{{#with (lookup ../plan @index)}}
           <p>{{lunch.name}}</p>
           {{/with}}
           <div><button id="{{@index}}Lunch"><a href="/add-meals/{{@index}}/Lunch">Add</a></button>
@@ -108,7 +116,12 @@
       <tr>
         <td class="snack">Snack</td>
         {{#each weekArray}}
-        <td>{{#with (lookup ../plan @index)}}
+        <td style="background-color:
+                  {{#with (lookup ../plan @index)}}
+              {{afternoonsnack.color}}
+                  {{/with}}
+
+              ">{{#with (lookup ../plan @index)}}
           <p>{{afternoonsnack.name}}</p>
           {{/with}}
           <div><button id="{{@index}}Afternoonsnack"><a href="/add-meals/{{@index}}/Afternoonsnack">Add</a></button>
@@ -119,7 +132,12 @@
       <tr>
         <td class="dinner">Dinner</td>
         {{#each weekArray}}
-        <td>{{#with (lookup ../plan @index)}}
+        <td style="background-color:
+                  {{#with (lookup ../plan @index)}}
+              {{dinner.color}}
+                  {{/with}}
+
+              ">{{#with (lookup ../plan @index)}}
           <p>{{dinner.name}}</p>
           {{/with}}
           <div><button id="{{@index}}Dinner"><a href="/add-meals/{{@index}}/Dinner">Add</a></button>
@@ -130,7 +148,6 @@
       </tbody>
       </table>
 
-      <p>Hello {{user._plan}}</p>
     </div>
 
   </div>

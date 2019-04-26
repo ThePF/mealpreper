@@ -17,7 +17,7 @@
         {{#each weekArray}}
 
         {{#with (lookup ../plan @index)}}
-        <li>{{breakfast.ingredients}}</li>
+        <li>{{morningsnack.ingredients}}</li>
         {{/with}}
 
         {{/each}}
@@ -27,7 +27,7 @@
         {{#each weekArray}}
 
         {{#with (lookup ../plan @index)}}
-        <li>{{breakfast.ingredients}}</li>
+        <li>{{lunch.ingredients}}</li>
         {{/with}}
 
         {{/each}}
@@ -37,7 +37,7 @@
         {{#each weekArray}}
 
         {{#with (lookup ../plan @index)}}
-        <li>{{breakfast.ingredients}}</li>
+        <li>{{afternoonsnack.ingredients}}</li>
         {{/with}}
 
         {{/each}}
@@ -47,7 +47,7 @@
         {{#each weekArray}}
 
         {{#with (lookup ../plan @index)}}
-        <li>{{breakfast.ingredients}}</li>
+        <li>{{dinner.ingredients}}</li>
         {{/with}}
 
         {{/each}}
@@ -55,5 +55,5 @@
     </div>
     <div class="print-op">
       <button class="print" onClick="window.print()">Print this page</button>
-      <a class="back-to-new-meal-plan" href="/welcome">Go back to create a new mealplan for next week</a>
+      <a class="back-to-new-meal-plan" href="/welcome">Create new mealplan</a>
     </div>
